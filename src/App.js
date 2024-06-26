@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import React, { lazy, Suspense } from 'react';
+import React, { lazy, Suspense, useState } from 'react';
 //import Home from "./components/Home";
 import Project from "./components/Project";
 import About from "./components/About";
@@ -10,10 +10,13 @@ import TopBar from "./components/TopBar";
 const Home = lazy(() => import("./components/Home"))
 
 function App() {
+  const [nav, setNav] = useState(false);
   return (
     <Suspense fallback={<div>Load</div>}>
       <TopBar/>
-      <Nav/>
+      <Nav nav={nav} setNav={setNav}/>
+
+      <div id="navdark" className="w-full h-[100vh] bg-prime/[0] cz-transition fixed lg:hidden top-0 left-0 z-[0]"></div>
       <div className="container w-full pr-[18px] px-6 pl-[10.7%] lg:pl-[16.5%] overflow-x-hidden overflow-y-scroll h-screen pb-[8%]">
         <BrowserRouter>
           <Routes>

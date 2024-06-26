@@ -9,7 +9,7 @@ function Project() {
    }, [])
 
   return (
-    <div className="mt-[2.25rem] lg:mt-[1.6rem] -z-1">
+    <div className="mt-[2.25rem] lg:mt-[1.6rem]">
       <header className="w-full pb-2 pt-4 lg:pt-7 flex lg:flex-col items-end lg:items-start mt-[0.5rem]">
         <div className="font-bold text-xl lg:text-2xl mr-3 text-tsec">Project</div>
         <div className="before:content-['>'] lg:before:content-[''] before:mr-2 lg:before:mr-0 before:text-xl -mt-2 text-tter">Daftar project kami</div>
@@ -32,13 +32,8 @@ const ProjectList = ({ name, lang, app, ver, act, des, img }) => {
       {img ? (<img loading="lazy" className="mt-2 w-full cz-project-img aspect-[2/1] lg:aspect-[3/1] object-cover rounded" src={img} alt={name} />) : (<div className="w-full bg-prime rounded lg:aspect-[3/1] mt-2 mb-auto"></div>)}
       <p className="text-xs py-3 mt-2 px-2 bg-prime leading-[0.76rem] font-sans rounded whitespace-pre">{des}</p>
       <div className="bg-nav w-full px-3 py-1 text-xs mt-2">
-        <b>Stats</b>
-        <div className="flex items-center"><i className='bx bx-code-curly mr-1 text-sm' style={{color:'#ffffff'}}  ></i> {lang.map(r => r.charAt(0).toUpperCase() + r.slice(1)).join(", ")}</div>
-        <div className="flex items-center"><i className='bx bx-mobile-landscape mr-1 text-sm' style={{color:'#ffffff'}}  ></i> {app}</div>
-      </div>
-      <div className="text-[0.6rem] px-1 pt-1 font-bold before:content-['v']">{ver}</div>
     </div>*/
-    <div className="cz-transition bg-navLogo aspect-square rounded relative">
+    <div className="cz-transition bg-navLogo aspect-square rounded relative z-0">
       {img ? (<img loading="lazy" className="object-cover aspect-square rounded" src={img} alt={name}/>) : (<div className="bg-nav w-full aspect-square"></div>)}
       <div className="absolute top-0 px-2 py-3 font-bold text-[0.6rem] lg:text-[0.72rem] font-['valorant'] -tracking-[0.06rem] text-white block">
         <b className="py-1 px-2 bg-nav rounded">{name}</b>
