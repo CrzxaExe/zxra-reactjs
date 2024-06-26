@@ -1,0 +1,52 @@
+import React, { useState } from 'react';
+//import { Link } from 'react-router-dom';
+import NavLine from "./NavLine";
+import lg from '../img/logo.png';
+
+const Nav = (res) => {
+  let [nav, setNav] = useState(false);
+  let navNow = res.nav || nav;
+
+  let navToggle = () => {
+    console.log(!navNow)
+    setNav(!navNow)
+  };
+  
+  function toPage(path) {
+    if(window.location.pathname.replace("/","") === path.replace("/", "")) return
+
+    window.location.href = path
+  }
+
+  return (
+    <div className="fixed pl-2 lg:pl-6 h-[100%] w-[2.5rem] border-transparent lg:border-tprime lg:w-[10.5rem] bg-nav lg:bg-nav/[0.4] transition duration-300 ease-in-out truncate pt-[0.2rem] lg:pt-[3.5rem] z-0 lg:mb-[2.8%] lg:h-full cz-nav overflow-x-hidden overflow-y-scroll mt-[2.5rem] lg:mt-0">
+      <div className="w-[99%] lg:w-full -mt-5 lg:-mt-[0.2rem]" onClick={navToggle}>
+        <b className="-mt-2lg:mt-7 text-2xl invisible lg:visible">Menu</b>
+        <img src={lg} alt="Zxra Logo" className="mx-auto w-full lg:w-0 bg-navlogo p-[8px] lg:p-0 rounded -ml-[8%] -mt-2" />
+      </div>
+      
+      <NavLine name="Route"/>
+
+      <div className="flex flex-col mt-3 lg:mt-2 text-sm w-[90%] lg:w-full font-['Valorant'] -tracking-[0.06rem]">
+        <div to="home" className="mb-1 flex items-center text-[1.06rem] truncate -ml-1 rounded lg:-ml-2 lg:hover:ml-0 px-2 py-[4px] bg-transparent hover:bg-navlogo transition-all ease-in-out duration-300" onClick={() => toPage("/")}>
+          <i className='bx bxs-home mr-1 text-[1.14rem]' style={{color:'#ffffff'}}  ></i>
+          <div className="tooltip ml-1">Beranda</div>
+        </div>
+        <div className="mb-1 flex items-center text-[1.06rem] truncate -ml-1 rounded lg:-ml-2 lg:hover:ml-0 px-2 py-[4px] bg-transparent hover:bg-navlogo transition-all ease-in-out duration-300" onClick={() => toPage("gallery")}>
+          <i className='bx bxs-photo-album mr-1 text-[1.14rem]' style={{color:'#ffffff'}}  ></i>
+          <div className="tooltip ml-1">Gallery</div>
+        </div>
+        <div className="mb-1 flex items-center text-[1.06rem] truncate -ml-1 rounded lg:-ml-2 lg:hover:ml-0 px-2 py-[4px] bg-transparent hover:bg-navlogo transition-all ease-in-out duration-300" onClick={() => toPage("project")}>
+          <i className='bx bxs-folder mr-1 text-[1.14rem]' style={{color:'#ffffff'}}  ></i>
+          <div className="tooltip ml-1">Project</div>
+        </div>
+        <div className="mb-1 flex items-center text-[1.06rem] truncate -ml-1 rounded lg:-ml-2 lg:hover:ml-0 px-2 py-[4px] bg-transparent hover:bg-navlogo transition-all ease-in-out duration-300" onClick={() => toPage("about")}>
+          <i className='bx bxs-copyright mr-1 text-[1.14rem]' style={{color:'#ffffff'}}  ></i>
+          <div className="tooltip ml-1">About</div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+export default Nav;

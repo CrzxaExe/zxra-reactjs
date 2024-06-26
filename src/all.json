@@ -1,0 +1,108 @@
+{
+  "project": [
+    {
+      "name": "Better Zxra Bedrock",
+      "ver": "1.1.2r",
+      "img": "https://raw.githubusercontent.com/CrzxaExe/CzWeb/main/img/heads.png",
+      "act": true,
+      "stats": {
+        "lang": [ "javascript", "json" ],
+        "app": "Minecraft Addon"
+      },
+      "des": "Lets Enchant your journey with this addon\nAdds many features and new mechanics which such as RPG game"
+    },
+    {
+      "name": "Zxra Rest",
+      "ver": "1.0.0",
+      "act": true,
+      "stats": {
+        "lang": [ "javascript", "json" ],
+        "app": "Restfull API"
+      },
+      "des": "Connected to your Zxra Client"
+    },
+    {
+      "name": "Khyro Bot Discord",
+      "ver": "2.8.0",
+      "act": false,
+      "stats": {
+        "lang": [ "javascript" ],
+        "app": "Discord Bot"
+      },
+      "des": "Idk, just created\nBut this will be updated soon"
+    },
+    {
+      "name": "Khyro Bot Whatsapp",
+      "ver": "1.8.4",
+      "act": false,
+      "stats": {
+        "lang": [ "javascript" ],
+        "app": "Whatsapp Bot"
+      },
+      "des": "Idk, just created"
+    },
+    {
+      "name": "BZB Web",
+      "ver": "1",
+      "act": true,
+      "stats": {
+        "lang": [ "html","CSS","JS" ],
+        "app": "Static Website"
+      },
+      "des": "Idk, just created"
+    },
+    {
+      "name": "Crzx Portofolio",
+      "ver": "1",
+      "img": "https://raw.githubusercontent.com/CrzxaExe/CrzxaExe/main/asset/Logo%20(1).png",
+      "act": false,
+      "stats": {
+        "lang": [ "html","CSS","JS" ],
+        "app": "Static Website"
+      },
+      "des": "Idk, just created"
+    },
+    {
+      "name": "Cz DB",
+      "ver": "1.0.5",
+      "act": false,
+      "stats": {
+        "lang": [ "javascript" ],
+        "app": "Express.js + React.js"
+      },
+      "des": "Idk, just created"
+    },
+    {
+      "name": "Xdzr",
+      "ver": "1.0.0",
+      "act": false,
+      "stats": {
+        "lang": [ "typescript" ],
+        "app": "React Native App"
+      },
+      "des": "Idk, just created"
+    },
+    {
+      "name": "Mkx",
+      "ver": "1.4.0",
+      "img": "https://cdn.discordapp.com/avatars/992661371923746888/197d6cfddb7d3cdc96e4850d0c3f2e1e?size=1024",
+      "act": true,
+      "stats": {
+        "lang": [ "javascript" ],
+        "app": "Discord & Whatsapp Bot"
+      },
+      "des": "Eazier your tasks"
+    },
+    {
+      "name": "ZxraDustry",
+      "ver": "0.1.2",
+      "img": "https://raw.githubusercontent.com/CrzxaExe/ZxraDustry/main/icon.png",
+      "act": false,
+      "stats": {
+        "lang": [ "json" ],
+        "app": "Mindustry Mod"
+      },
+      "des": "Just wanted to create"
+    }
+  ]
+}

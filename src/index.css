@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'Valorant';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(./fonts/VALORANT-Regular.woff2) format('woff2');
+  }
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  @apply bg-prime text-tprime;
+}
+
+.cz-line {
+  border: 2px solid #fff;
+  border-right: 0;
+  border-top: 0;
+  border-bottom: 0;
+  background: linear-gradient(90deg, #ffffff30, #ffffff24, #ffffff00);
+}
+
+.cz-nav {
+  border: 0px solid #ffffff00;
+  border-left: 0;
+  border-top: 0;
+  border-bottom: 0;
+}
+
+.cz-top {
+  transition: background .8s ease-in-out;
+  z-index: 2;
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+}
+
+.cz-transition {
+  transition: all .5s ease-in-out;
+}
+
+.cz-project-img {
+  transition: all .3s ease-in-out;
+}
