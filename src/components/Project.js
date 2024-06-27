@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import jsonData from '../all.json';
+import Footer from "./Footer";
 
 function Project() {
    const [data, setData] = useState([])
@@ -21,6 +22,7 @@ function Project() {
        ))}
       </section>
 
+    <Footer left={{ link: "/gallery", text: "Gallery" }} right={{ link: "/about", text: "About" }}/>
     </div>
   );
 }

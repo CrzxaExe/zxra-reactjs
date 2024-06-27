@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from "./Footer";
 
 function Gallery() {
   return (
@@ -11,6 +12,7 @@ function Gallery() {
       <section id="home" className="w-full py-2 flex flex-wrap -mt-7">
       </section>
 
+    <Footer left={{ link: "/", text: "Home" }} right={{ link: "/project", text: "Project" }}/>
     </div>
   );
 }

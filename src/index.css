@@ -46,3 +46,7 @@ body {
 .cz-project-img {
   transition: all .3s ease-in-out;
 }
+
+.cz-white {
+  color: white !important;
+}

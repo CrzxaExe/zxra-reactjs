@@ -5,6 +5,7 @@ import Project from "./components/Project";
 import About from "./components/About";
 import Gallery from "./components/Gallery";
 import Nav from "./components/Nav";
+import Loading from "./components/Loading";
 import TopBar from "./components/TopBar";
 
 const Home = lazy(() => import("./components/Home"))
@@ -12,7 +13,7 @@ const Home = lazy(() => import("./components/Home"))
 function App() {
   const [nav, setNav] = useState(false);
   return (
-    <Suspense fallback={<div>Load</div>}>
+    <Suspense fallback={<Loading/>}>
       <TopBar/>
       <Nav nav={nav} setNav={setNav}/>
 

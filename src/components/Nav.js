@@ -17,13 +17,13 @@ const Nav = ({ nav, setNav }) => {
   useEffect(() => {
     let bars = document.querySelector("#nav"), bgdn = document.querySelector("#navdark");;
     if(nav) {
-      bars.classList.add("w-[10rem]")
+      bars.classList.add("w-[9.7rem]")
       bars.classList.remove("w-[2.5rem]")
       bgdn.classList.add("bg-prime/[0.8]")
       bgdn.classList.remove("bg-prime/[0]")
       bgdn.classList.remove("hidden")
     } else {
-      bars.classList.remove("w-[10rem]")
+      bars.classList.remove("w-[9.7rem]")
       bars.classList.add("w-[2.5rem]")
       bgdn.classList.remove("bg-prime/[0.8]")
       bgdn.classList.add("bg-prime/[0]")
@@ -33,7 +33,7 @@ const Nav = ({ nav, setNav }) => {
   
 
   return (
-    <nav id="nav" className="transition-all duration-500 ease-in-out fixed pl-2 lg:pl-6 h-[100%] w-[2.5rem] border-transparent lg:border-tprime lg:w-[10.5rem] bg-nav lg:bg-nav/[0.4] transition duration-300 ease-in-out truncate pt-[0.2rem] lg:pt-[3.5rem] z-[12] lg:mb-[2.8%] lg:h-full cz-nav overflow-x-hidden overflow-y-scroll mt-[2.5rem] lg:mt-0">
+    <nav id="nav" className="transition-all duration-500 ease-in-out fixed pl-2 lg:pl-4 lg:pr-3 h-[100%] w-[2.5rem] border-transparent lg:border-tprime lg:w-[10.5rem] bg-nav lg:bg-nav/[0.4] transition duration-300 ease-in-out truncate pt-[0.2rem] lg:pt-[3.5rem] z-[12] lg:mb-[2.8%] lg:h-full cz-nav overflow-x-hidden overflow-y-scroll mt-[2.5rem] lg:mt-0">
       <div className="w-[99%] lg:w-full -mt-5 lg:-mt-[0.2rem]" onClick={() => navToggle()}>
         <b className="-mt-2 lg:mt-7 text-2xl invisible lg:visible">Menu</b>
         <img src={lg} alt="Zxra Logo" className="mx-auto w-[2.3rem] lg:w-0 bg-navlogo p-[8px] lg:p-0 rounded absolute right-0 lg:relative -mt-2" />

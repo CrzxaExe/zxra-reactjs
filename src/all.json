@@ -13,7 +13,7 @@
     },
     {
       "name": "Zxra Rest",
-      "ver": "1.0.0",
+      "ver": "1.2.0",
       "act": true,
       "stats": {
         "lang": [ "javascript", "json" ],
@@ -44,6 +44,7 @@
     {
       "name": "BZB Web",
       "ver": "1",
+      "img": "https://raw.githubusercontent.com/CrzxaExe/Zxra-web/master/img/bzb.png",
       "act": true,
       "stats": {
         "lang": [ "html","CSS","JS" ],
@@ -64,7 +65,7 @@
     },
     {
       "name": "Cz DB",
-      "ver": "1.0.5",
+      "ver": "1.0.8",
       "act": false,
       "stats": {
         "lang": [ "javascript" ],
@@ -84,7 +85,7 @@
     },
     {
       "name": "Mkx",
-      "ver": "1.4.0",
+      "ver": "1.6.9",
       "img": "https://cdn.discordapp.com/avatars/992661371923746888/197d6cfddb7d3cdc96e4850d0c3f2e1e?size=1024",
       "act": true,
       "stats": {

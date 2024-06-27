@@ -1,12 +1,12 @@
 import React from 'react';
 
-const NavLine = ({ name }) => {
+const TextLine = ({ name }) => {
   return (
-    <div className="w-full flex -mb-5 lg:-mb-2 text-sm items-center invisible lg:visible lg:mt-7 relative">
+    <div className="w-full flex mb-2 lg:mb-1 text-sm items-center mt-7 lg:mt-6">
       <b className="whitespace-nowrap">{name}</b>
       <div className="w-full bg-tprime h-[1px] ml-1"></div>
     </div>
   )
 }
 
-export default NavLine;
+export default TextLine;

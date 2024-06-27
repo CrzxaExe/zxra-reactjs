@@ -6,6 +6,7 @@ module.exports = {
   theme: {
     colors: {
       prime: '#0f172a',
+      darkprime: '#020617',
       tprime: '#e2e8f0',
       tsec: '#2dd4bf',
       tter: '#64748b',
