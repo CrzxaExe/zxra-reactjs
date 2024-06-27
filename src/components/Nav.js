@@ -18,13 +18,13 @@ const Nav = ({ nav, setNav }) => {
     let bars = document.querySelector("#nav"), bgdn = document.querySelector("#navdark");;
     if(nav) {
       bars.classList.add("w-[9.7rem]")
-      bars.classList.remove("w-[2.5rem]")
+      bars.classList.remove("w-[2.3rem]")
       bgdn.classList.add("bg-prime/[0.8]")
       bgdn.classList.remove("bg-prime/[0]")
       bgdn.classList.remove("hidden")
     } else {
       bars.classList.remove("w-[9.7rem]")
-      bars.classList.add("w-[2.5rem]")
+      bars.classList.add("w-[2.3rem]")
       bgdn.classList.remove("bg-prime/[0.8]")
       bgdn.classList.add("bg-prime/[0]")
       bgdn.classList.add("hidden")

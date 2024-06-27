@@ -68,19 +68,21 @@ function Home() {
             <TerminalIcon className="bg-prime rounded p-1 text-tsec ml-2" sx={{ fontSize: 40 }} /><br/>
             <b className="px-3 lg:text-lg">Bahasa Pemograman</b>
             <div className="flex flex-wrap w-full items-start">
-            <div className="w-full lg:w-1/2" ><Doughnut data={langData} options={{
+            <div className="w-full lg:w-1/2 h-full" ><Doughnut data={langData} options={{
               borderColor: 'rgba(0,0,0,0)',
               radius: 140,
               color: '#fff',
               plugins: {
                 legend: {
+                  fullSize: true,
+                  padding: 20,
                   labels: {
                     font: { size: 10, },
                   },
                 },
               },
             }} /></div>
-            <p className="text-xs px-3 text-justify w-full lg:w-1/2 bg-prime rounded-2 px-3 py-2 whitespace-pre-line break-normal">
+            <p className="text-xs px-3 mt-8 lg:mt-0 text-justify w-full lg:w-1/2 bg-prime rounded-2 px-3 py-2 whitespace-pre-line break-normal">
               {`Tabel tersebut merupakan histori bahasa yang kami gunakan pada project-project kami saat ini.
 
               Kami akan selalu belajar tentang bahasa pemrograman yang ada, mengingat banyaknya bahasa pemrograman yang ada.
