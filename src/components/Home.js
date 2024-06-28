@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Chart from 'chart.js/auto';
+import 'chart.js/auto';
 import { Doughnut } from 'react-chartjs-2';
 import Badge from '@mui/material/Badge';
 import TextLine from "./TextLine";
@@ -70,7 +70,7 @@ function Home() {
             <div className="flex flex-wrap w-full items-start">
             <div className="w-full lg:w-1/2 h-full" ><Doughnut data={langData} options={{
               borderColor: 'rgba(0,0,0,0)',
-              radius: 140,
+              radius: 90,
               color: '#fff',
               plugins: {
                 legend: {
@@ -95,7 +95,7 @@ function Home() {
           <div className="self-center w-full  bg-nav rounded px-2 py-3 mb-2">
             <SourceIcon className="bg-prime rounded p-1 text-tsec ml-2" sx={{ fontSize: 40 }} /><br/>
             <b className="px-3 lg:text-lg">Open Source Repo</b>
-            <p className="text-sm px-3 text-justify">Kebanyakan project kami bersifat open source dan bisa digunakan siapa saja, namun untuk beberapa project, kami hanya sedikit membatasi penggunaanya. Kami juga akan selalu memperbarui kualitas koding kita(kalo tidak malas). Doukemntasi project juga dapat diakses dan mudah untuk dipahami(mungkin)</p>
+            <p className="text-sm px-3 text-justify">Kebanyakan project kami bersifat open source dan bisa digunakan siapa saja, namun untuk beberapa project, kami hanya sedikit membatasi penggunaanya. Kami juga akan selalu memperbarui kualitas koding kita(kalo tidak malas). Dokumentasi project juga dapat diakses dan mudah untuk dipahami(mungkin)</p>
           </div>
           <div className="self-center w-full lg:w-[49.3%] lg:mr-[0.7%] bg-nav rounded px-2 py-3">
             <BackupTableIcon className="bg-prime rounded p-1 text-tsec ml-2" sx={{ fontSize: 40 }} /><br/>

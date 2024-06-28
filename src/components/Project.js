@@ -18,7 +18,7 @@ function Project() {
 
       <section id="in" className="w-full py-2 grid grid-cols-3 lg:grid-cols-5 gap-2 grid-floa-dense -mt-4">
        {data.sort((a,b) => a.name.localeCompare(b.name)).map((e,i) => (
-         <ProjectList name={e.name} lang={e.stats.lang} app={e.stats.app} act={e.act} ver={e.ver} des={e.des} img={e.img} />
+         <ProjectList name={e.name} link={e.link} lang={e.stats.lang} app={e.stats.app} act={e.act} ver={e.ver} des={e.des} img={e.img} />
        ))}
       </section>
 
@@ -27,7 +27,7 @@ function Project() {
   );
 }
 
-const ProjectList = ({ name, lang, app, ver, act, des, img }) => {
+const ProjectList = ({ name, lang, app, ver, act, des, img, link }) => {
   return (
     /*<div className="w-full px-3 py-2 bg-navlogo rounded mt-2 lg:w-[48%] mx-1">
       <div className="font-bold font-mono text-xs lg:text-sm py-[6px] px-2 bg-nav rounded flex items-center inline-flex">{act ? (<i className='bx bxs-check-circle text-active mr-1 text-sm' style={{color:'#22d3ee'}}  ></i>):(<i className='bx bxs-error-circle text-inactive mr-1 text-sm' style={{color:'#fdba74'}}  ></i>)}<b>{name}</b></div>
@@ -35,7 +35,7 @@ const ProjectList = ({ name, lang, app, ver, act, des, img }) => {
       <p className="text-xs py-3 mt-2 px-2 bg-prime leading-[0.76rem] font-sans rounded whitespace-pre">{des}</p>
       <div className="bg-nav w-full px-3 py-1 text-xs mt-2">
     </div>*/
-    <div className="cz-transition bg-navLogo aspect-square rounded relative z-0">
+    <a href={link ? link : "#"} className="cz-transition bg-navLogo aspect-square rounded relative z-0">
       {img ? (<img loading="lazy" className="object-cover aspect-square rounded" src={img} alt={name}/>) : (<div className="bg-nav w-full aspect-square"></div>)}
       <div className="absolute top-0 px-2 py-3 font-bold text-[0.6rem] lg:text-[0.72rem] font-['valorant'] -tracking-[0.06rem] text-white block">
         <b className="py-1 px-2 bg-nav rounded">{name}</b>
@@ -46,7 +46,7 @@ const ProjectList = ({ name, lang, app, ver, act, des, img }) => {
         <div className="hidden lg:inline-flex items-center rounded bg-nav px-1 mb-[0.1rem]"><i className='bx bx-code-curly mr-1 text-sm' style={{color:'#ffffff'}}  ></i> {lang.map(r => r.charAt(0).toUpperCase() + r.slice(1)).join(", ")}</div>
         <div className="flex items-center rounded bg-nav px-1"><i className='bx bx-mobile-landscape mr-1 text-sm' style={{color:'#ffffff'}}  ></i> {app}</div>
       </div>
-    </div>
+    </a>
   )
 }
 

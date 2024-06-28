@@ -8,6 +8,9 @@ import Nav from "./components/Nav";
 import Loading from "./components/Loading";
 import TopBar from "./components/TopBar";
 
+// Project Components
+import Bzb from "./components/projects/Bzb";
+
 const Home = lazy(() => import("./components/Home"))
 
 function App() {
@@ -23,9 +26,14 @@ function App() {
           <Routes>
             <Route index element={<Home/>} />
             <Route exact path="gallery" element={<Gallery/>} />
-            <Route exact path="project" element={<Project/>} />
             <Route exact path="about" element={<About/>} />
             <Route exact path="/" element={<Home/>} />
+          </Routes>
+        </BrowserRouter>
+        <BrowserRouter basename="/project">
+          <Routes>
+            <Route exact path="/" element={<Project/>} />
+            <Route exact path="bzb" element={<Bzb/>} />
           </Routes>
         </BrowserRouter>
       </div>

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { coy } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import Footer from "./Footer";
@@ -10,9 +10,6 @@ function About() {
   import Zxra from '@zxra/cz-dx';
   `;
 
-  useEffect(() => {
-  }, []);
-
   return (
     <div className="mt-[2.25rem] lg:mt-[1.6rem] -z-1">
       <title>About Zxra</title>
@@ -22,7 +19,7 @@ function About() {
       </header>
 
       <section id="about" className="w-full py-2 -mt-2 text-xs text-tprime">
-        <SyntaxHighlighter className="relative -z-[1]" language="javascript" style={coy} customStyle={{ backgroundColor: '#083344', color: '#cffafe' }} className="text-white cz-white">
+        <SyntaxHighlighter language="javascript" style={coy} customStyle={{ backgroundColor: '#083344', color: '#cffafe' }} className="text-white cz-white">
           {codeString}
         </SyntaxHighlighter>
 

@@ -1,10 +1,9 @@
 import React from 'react';
-//import lg from '../img/logo.png';
 
 function Loading() {
   return (
-    <div className="w-full h-screen">
-     <b className="mx-auto my-auto">Loading</b>
+    <div className="w-full h-screen flex items-center justify-center">
+     <b className="font-['Valorant'] text-lg lg:text-xl">Loading</b>
     </div>
   );
 }
