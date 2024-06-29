@@ -38,7 +38,7 @@ const Nav = ({ nav, setNav }) => {
         <b className="-mt-2 lg:mt-7 text-2xl invisible lg:visible">Menu</b>
         <img src={lg} alt="Zxra Logo" className="mx-auto w-[2.3rem] lg:w-0 bg-navlogo p-[8px] lg:p-0 rounded absolute right-0 lg:relative -mt-2" />
       </div>
-      
+
       <NavLine name="Route"/>
 
       <div className="flex flex-col mt-9 lg:mt-2 text-sm w-[90%] lg:w-full font-['Valorant'] -tracking-[0.06rem]">

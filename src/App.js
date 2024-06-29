@@ -9,7 +9,9 @@ import Loading from "./components/Loading";
 import TopBar from "./components/TopBar";
 
 // Project Components
-import Bzb from "./components/projects/Bzb";
+// BZB
+import Bzb from "./components/projects/bzb/Bzb";
+import BzbMechanics from "./components/projects/bzb/BzbMechanics";
 
 const Home = lazy(() => import("./components/Home"))
 
@@ -27,13 +29,15 @@ function App() {
             <Route index element={<Home/>} />
             <Route exact path="gallery" element={<Gallery/>} />
             <Route exact path="about" element={<About/>} />
+            <Route exact path="project" element={<Project/>} />
             <Route exact path="/" element={<Home/>} />
           </Routes>
         </BrowserRouter>
-        <BrowserRouter basename="/project">
+
+        <BrowserRouter basename="project/bzb">
           <Routes>
-            <Route exact path="/" element={<Project/>} />
-            <Route exact path="bzb" element={<Bzb/>} />
+            <Route exact path="/" element={<Bzb/>} />
+            <Route exact path="mechanics" element={<BzbMechanics full="true" />} />
           </Routes>
         </BrowserRouter>
       </div>
