@@ -29,12 +29,6 @@ function Project() {
 
 const ProjectList = ({ name, lang, app, ver, act, des, img, link }) => {
   return (
-    /*<div className="w-full px-3 py-2 bg-navlogo rounded mt-2 lg:w-[48%] mx-1">
-      <div className="font-bold font-mono text-xs lg:text-sm py-[6px] px-2 bg-nav rounded flex items-center inline-flex">{act ? (<i className='bx bxs-check-circle text-active mr-1 text-sm' style={{color:'#22d3ee'}}  ></i>):(<i className='bx bxs-error-circle text-inactive mr-1 text-sm' style={{color:'#fdba74'}}  ></i>)}<b>{name}</b></div>
-      {img ? (<img loading="lazy" className="mt-2 w-full cz-project-img aspect-[2/1] lg:aspect-[3/1] object-cover rounded" src={img} alt={name} />) : (<div className="w-full bg-prime rounded lg:aspect-[3/1] mt-2 mb-auto"></div>)}
-      <p className="text-xs py-3 mt-2 px-2 bg-prime leading-[0.76rem] font-sans rounded whitespace-pre">{des}</p>
-      <div className="bg-nav w-full px-3 py-1 text-xs mt-2">
-    </div>*/
     <a href={link ? link : "#"} className="cz-transition bg-navLogo aspect-square rounded relative z-0">
       {img ? (<img loading="lazy" className="object-cover aspect-square rounded" src={img} alt={name}/>) : (<div className="bg-nav w-full aspect-square"></div>)}
       <div className="absolute top-0 px-2 py-3 font-bold text-[0.6rem] lg:text-[0.72rem] font-['valorant'] -tracking-[0.06rem] text-white block">

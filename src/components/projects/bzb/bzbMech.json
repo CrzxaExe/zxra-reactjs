@@ -1,0 +1,93 @@
+[
+  {
+    "name": "Kehausan (Thirst)",
+    "id": "thirst",
+    "ctn": [
+      "Sesuai namanya ini merupakan mekanik yang mengharuskan kalian meminum air untuk bertahan hidup, kalian bisa saja mati karena tidak meminum air. Semua jenis minuman mau ramuan, atau botol air, akan mengisi kehausan kalian termasuk memakan buah-buahan",
+      "bold/Properti",
+      "sub/• thirst.max\n   Maksimum range dari poin kehausan player",
+      "sub/• thirst.value\n   Poin kehausan player",
+
+      "bold/Method",
+      "mono/• addThirst(key, amount): <void>",
+      "subpart/Menambahkan poin kehausan berdasarkan key\nkey   : <string> | properti\namount: <number>",
+      "mono/• controllerThirst(): <void>",
+      "subpart/Kontroller untuk mengatur mekanik kehausan",
+      "mono/• getThirst(): <object>",
+      "subpart/Mengambil data kehausan\nMengembalikan Thirst: <object> = {\n  max  : <number>,\n  value: <number>\n}",
+      "mono/• minThirst(key, amount): <void>",
+      "subpart/Mengurangi poin kehausan berdasarkan key\nkey   : <string> | properti\namount: <number>",
+      "mono/• resetThirst(key): <void>",
+      "subpart/Mengatur ulang poin dari properti key ke posisi awal\nkey : <string>",
+      "mono/• resetAllThirst(): <void>",
+      "subpart/Mengatur ulang semua properti kehausan ke keadaan semula",
+      "mono/• setThirst(key, value): <void>",
+      "subpart/Mengatur poin kehausan berdasarkan key\nkey  : <string> | properti\nvalue: <number>",
+      "mono/• setValueDefaultThirst(): <void>",
+      "subpart/Mengatur ulang properti value menjadi sama seperti maksimal poin kehausan",
+
+      "full/Source code Thirst:",
+      "source/import { Entity } from 'system.js';\n\nexport class Specialist extends Entity {\n  ..\n  getThirst() {\n    return this.getData().thirst;\n  };\n  addThirst(key, amount) {\n    let data = this.getData(), total = data.thirst[key] + Number(amount);\n\n    if((key == 'value') && total > data.thirst.max) total = data.thirst.max;\n    if(key == 'value' && total <= 0) total = 0;\n\n    data.thirst[key] = total;\n    this.setData(data);\n  };\n  minThirst(key, amount) {\n    this.addThirst(key, -Number(amount));\n  };\n  setThirst(key, value) {\n    let data = this.getData();\n    data.thirst[key] = Number(value);\n    this.setData(data);\n  };\n  setValueDefaultThirst() {\n    this.setThirst('value', this.getThirst().max);\n  };\n  controllerThirst() {\n    let data = this.getThirst(), minus = 0.005, status = this.status(), thirstEff = status.getStatusBy({ type: 'thirst' }) || { lvl: 0 };\n\n    if(this.player.isSprinting) minus = minus + 0.03;\n    if(this.player.dimension.id.split(':')[1] == 'nether') minus += 0.02;\n    if(data.value <= 0) this.addEffect([{ name: 'nausea', duration: 25, lvl: 2 }, { name: 'poison', duration: 25, lvl: 3 }]);\n    minus += Number(thirstEff.lvl)*0.02;\n\n    this.minThirst('value', minus);\n  };\n  resetThirst(key) {\n    let data = this.getData();\n\n    if(key == 'max' && data.thirst.value > this.rawData.thirst.max) this.setThirst('value', this.rawData.thirst.max);\n    this.setThirst(key, this.rawData.thirst[key]);\n  };\n  resetAllThirst() {\n    this.setThirst('max', this.rawData.thirst.max);\n    this.setThirst('value', this.rawData.thirst.value);\n  };\n  ..\n}"
+    ]
+  },
+  {
+    "name": "Reputasi (Reputation)",
+    "id": "reputation",
+    "ctn": [
+      "Reputasimu akan semakin tinggi jika menyelesaikan misi. Semakin tinggi reputasimu, misi yang didapat makin beragam dan juga hadiah yang didapat lebih banyak",
+      "bold/Method",
+      "mono/• addRep(amount): <void>",
+      "subpart/Menambahkan poin reputasi\namount: <number>",
+      "mono/• getRep(): <number>",
+      "subpart/Menangambil poin reputasi\nMengembalikan Reputation: <number>",
+      "mono/• minRep(amount): <void>",
+      "subpart/Mengurangi poin reputasi\namount: <number>",
+      "mono/• resetRep(): <void>",
+      "subpart/Mengatur ulang poin reputasi menjadi 0",
+      "mono/• setRep(value): <void>",
+      "subpart/Mengatur poin reputasi menjadi value yang sudag ditetapkan",
+
+      "full/Source code Reputation:",
+      "source/import { Entity } from 'system.js';\n\nexport class Specialist extends Entity {\n  ..\n  getRep() {\n    return this.getData().reputation;\n  };\n  addRep(amount) {\n    let data = this.getData();\n    data.reputation +=  Number(amount);\n    if(data.reputation <= 0) data.reputation = 0;\n    this.setData(data);\n  };\n  minRep(amount) {\n    this.addRep(-Number(amount));\n  };\n  setRep(value) {\n    let data = this.getData();\n    data.reputation = Number(value);\n    this.setData(data);\n  };\n  resetRep() {\n    this.setRep(this.rawData.reputation);\n  };\n  ..\n}"
+    ]
+  },
+  {
+    "name": "Stamina",
+    "id": "stamina",
+    "ctn": [
+      "Waduh lelah nih, yap dengan ini kalian sekarang harus memperhatikan stamina kalian. Jangan terlalu lelah karna itu akan berbahaya untuk kalian",
+      "bold/Properti",
+      "sub/• stamina.add\n   Stamina dari leveling spesialist",
+      "sub/• stamina.max\n   Maksimum range dari poin stamina player",
+      "sub/• stamina.value\n   Poin stamina player",
+
+      "bold/Method",
+      "mono/• addStamina(key, amount): <void>",
+      "subpart/Menambahkan poin stamina berdasarkan key\nkey   : <string> | properti\namount: <number>",
+      "mono/• controllerStamina(): <void>",
+      "subpart/Kontroller untuk mengatur mekanik stamina",
+      "mono/• getStamina(): <object>",
+      "subpart/Menangambil object stamina\nMengembalikan Stamina: <object> = {\n  add  : <number>,\n  max  : <number>,\n  value: <number>\n}",
+      "mono/• minStamina(key, amount): <void>",
+      "subpart/Mengurangi poin stamina berdasarkan key\nkey   : <string> | properti\namount: <number>",
+      "mono/• resetStamina(key): <void>",
+      "subpart/Mengatur ulang poin dari properti key ke posisi awal\nkey : <string>",
+      "mono/• resetAllStamina(): <void>",
+      "subpart/Mengatur ulang semua properti stamina ke keadaan semula",
+      "mono/• setStamina(key, value): <void>",
+      "subpart/Mengatur poin stamina berdasarkan key\nkey  : <string> | properti\nvalue: <number>",
+      "mono/• setValueDefaultStamina(): <void>",
+      "subpart/Mengatur ulang properti value menjadi sama seperti maksimal poin stamina",
+
+      "full/Source code Stamina:",
+      "source/import { Entity } from 'system.js';\n\nexport class Specialist extends Entity {\n  ..\n  getStamina() {\n    return this.getData().stamina;\n  };\n  addStamina(key, amount) {\n    let data = this.getData(), total = data.stamina[key] + Number(amount);\n    if(key == 'value' && total <= 0) total = 0;\n\n    data.stamina[key] = total;\n    this.setData(data);\n  };\n  minStamina(key, amount) {\n    this.addStamina(key, -Number(amount));\n  };\n  setStamina(key, value) {\n    let data = this.getData();\n\n    data.stamina[key] = Number(value);\n    this.setData(data);\n  };\n  setValueDefaultStamina() {\n    this.setStamina('value', this.getStamina().max + this.getStamina().add);\n  };\n  controllerStamina() {\n    let data = this.getStamina(), stm = 1.5, cd = this.cooldown(), sts = this.status();\n    let down = sts.getStatusBy({ type: :stamina_down' }), exhaust = sts.getStatusBy({ type: 'stamina_exhaust' }), up = sts.getStatusBy({ type: 'stamina_up' }), additional = data.add || 0;\n\n    if(this.player.isSprinting == true || this.player.isSwimming == true) {\n      data.value - 4 <= 0 ? this.setStamina('value', 0) : stm = -1;\n      cd.setCd('stamina_regen', 3);\n    } else {\n      if(data.value + stm > data.max + additional) {\n        this.setStamina('value', data.max + additional);\n        stm = 0;\n      } else cd.getCd('stamina_regen').error == undefined ? stm = 0 : 0;\n    }\n\n    if(data.value <= 10) {\n      this.player.addEffect(EffectTypes.get('slowness'), 26, { amplifier: 2 });\n      if(data.value <= 0) this.player.addEffect(EffectTypes.get('poison'), 25, { amplifier: 3 });\n    }\n    if(stm !== 0) this.addStamina('value', Number(stm).toFixed(2));\n  };\n  resetStamina(key) {\n    let data = this.getData();\n\n    if(key == 'max' && data.stamina.value > this.rawData.stamina.max) this.setStamina('value', this.rawData.stamina.max);\n    this.setStamina(key, this.rawData.stamina[key]);\n  };\n  resetAllStamina() {\n    this.setStamina('max', this.rawData.stamina.max);\n    this.setStamina('value', this.rawData.stamina.value);\n  };\n  ..\n}"
+    ]
+  },
+  {
+    "name": "Uang (Money)",
+    "id": "money",
+    "ctn": [
+      "Uang adalah segalanya, kamu bisa membeli apapun itu hanya dengan uang. Tapi kamu butuh kerja rodi untuk mendapatkan uang, atau kamu bisa minta kepada admin jika kamu bermain diserver"
+    ]
+  }
+]

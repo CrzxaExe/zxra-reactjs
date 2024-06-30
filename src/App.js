@@ -23,7 +23,7 @@ function App() {
       <Nav nav={nav} setNav={setNav}/>
 
       <div id="navdark" className="w-full h-[100vh] bg-prime/[0] cz-transition fixed lg:hidden top-0 left-0 z-[0]"></div>
-      <div className="container w-full pr-[18px] px-6 pl-[13%] lg:pl-[16.5%] overflow-x-hidden overflow-y-scroll h-screen pb-[8%]">
+      <div className="container w-full pr-[18px] px-6 pl-[13%] lg:pl-[16.5%] overflow-x-hidden overflow-y-scroll h-screen pb-[8%] scroll-smooth">
         <BrowserRouter>
           <Routes>
             <Route index element={<Home/>} />
@@ -37,7 +37,7 @@ function App() {
         <BrowserRouter basename="project/bzb">
           <Routes>
             <Route exact path="/" element={<Bzb/>} />
-            <Route exact path="mechanics" element={<BzbMechanics full="true" />} />
+            <Route exact path="mechanics" element={<BzbMechanics full={true} />} />
           </Routes>
         </BrowserRouter>
       </div>

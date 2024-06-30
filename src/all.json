@@ -80,7 +80,17 @@
       "act": false,
       "stats": {
         "lang": [ "javascript" ],
-        "app": "Express.js + React.js"
+        "app": "Crud"
+      },
+      "des": "Idk, just created"
+    },
+    {
+      "name": "Chatlify",
+      "ver": "1.4.0",
+      "act": false,
+      "stats": {
+        "lang": [ "javascript" ],
+        "app": "Full Stack App"
       },
       "des": "Idk, just created"
     },

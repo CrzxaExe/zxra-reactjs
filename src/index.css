@@ -14,7 +14,7 @@
 
 body {
   font-family: 'Inter', sans-serif;
-  @apply bg-prime text-tprime;
+  @apply bg-prime text-tprime scroll-smooth;
 }
 
 .cz-line {
