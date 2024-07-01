@@ -59,7 +59,7 @@ function Bzb() {
               <tbody className="text-xs">
                 {down.map((e, i) => (
                   <tr key={i}>
-                    <th className="px-3 py-2 tracking-wide text-left font-['Valorant']">{i == 0 ? (<span className="text-active">* </span>) : ""}{e.name}{e.build ? `-B${e.build}` : ""}</th>
+                    <th className="px-3 py-2 tracking-wide text-left font-['Valorant']">{i === 0 ? (<span className="text-active">* </span>) : ""}{e.name}{e.build ? `-B${e.build}` : ""}</th>
                     <th className="px-3 py-2 tracking-wide text-left font-mono">{e.versi}</th>
                     <th className="px-3 py-2 tracking-wide text-left font-mono">{e.mc}</th>
                     <th className="px-3 py-2 tracking-wide text-center"><a className="text-active underline" href={e.link}>Link</a></th>

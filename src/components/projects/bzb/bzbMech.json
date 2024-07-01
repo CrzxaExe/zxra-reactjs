@@ -89,5 +89,13 @@
     "ctn": [
       "Uang adalah segalanya, kamu bisa membeli apapun itu hanya dengan uang. Tapi kamu butuh kerja rodi untuk mendapatkan uang, atau kamu bisa minta kepada admin jika kamu bermain diserver"
     ]
+  },
+  {
+    "name": "Suhu (Temperature)",
+    "id": "temp",
+    "cs": true,
+    "ctn": [
+      "Test"
+    ]
   }
 ]
