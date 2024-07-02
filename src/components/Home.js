@@ -55,59 +55,59 @@ function Home() {
       </section>
 
       <section className="mt-4 lg:mt-9">
-        <div className="bg-nav py-3 px-2">
-          <PersonalVideoIcon className="bg-prime rounded p-1 text-tsec ml-2" sx={{ fontSize: 40 }} /><br/>
-          <b className="text-lg font-['Valorant'] ml-2">Siapa itu <span className="text-tsec">Zxra</span>?</b>
-          <p className="text-sm indent-2.5 px-3 text-justify">Zxra adalah sekumpulan orang dengan kemampuan diluar nalar manusia yang memiliki tujuan yang sama yaitu memudahkan orang lain dengan beragam project yang telah dikeluarkan. Namun kami memiliki banyak kekurangan seperti terlalu malas untuk up project dan lain sebagainya.</p>
+        <div className="py-3 px-2">
+          <PersonalVideoIcon className="bg-nav rounded p-1 text-tsec" sx={{ fontSize: 40 }} />
+          <b className="text-lg font-['Valorant'] px-2">Siapa itu <span className="text-tsec">Zxra</span>?</b>
+          <p className="text-sm indent-2.5 px-3 ml-2 text-justify border-0 border-l pt-1">Zxra adalah sekumpulan orang dengan kemampuan diluar nalar manusia yang memiliki tujuan yang sama yaitu memudahkan orang lain dengan beragam project yang telah dikeluarkan. Namun kami memiliki banyak kekurangan seperti terlalu malas untuk up project dan lain sebagainya.</p>
         </div>
 
         <TextLine name="Yang Kami Punya--"/>
 
-        <div className="mt-3 flex flex-wrap w-full items-start">
-          <div className="self-center w-full  bg-nav rounded px-2 py-3 mb-2">
-            <TerminalIcon className="bg-prime rounded p-1 text-tsec ml-2" sx={{ fontSize: 40 }} /><br/>
-            <b className="px-3 lg:text-lg">Bahasa Pemograman</b>
+        <div className="mt-1 flex flex-wrap w-full items-start">
+          <div className="self-center w-full px-2 py-3 mb-2">
+            <TerminalIcon className="bg-nav rounded p-1 text-tsec" sx={{ fontSize: 40 }} />
+            <b className="px-2 lg:text-lg">Bahasa Pemograman</b>
             <div className="flex flex-wrap w-full items-start">
-            <div className="w-full lg:w-1/2 h-full" ><Doughnut data={langData} options={{
-              borderColor: 'rgba(0,0,0,0)',
-              radius: 90,
-              color: '#fff',
-              plugins: {
-                legend: {
-                  fullSize: true,
-                  padding: 20,
-                  labels: {
+              <div className="w-full lg:w-1/2 h-full border-0 border-l ml-1 pt-1" ><Doughnut data={langData} options={{
+                borderColor: 'rgba(0,0,0,0)',
+                radius: 93,
+                color: '#fff',
+                plugins: {
+                  legend: {
+                    fullSize: true,
+                    padding: 20,
+                    labels: {
                     font: { size: 10, },
+                    },
                   },
                 },
-              },
-            }} /></div>
-            <p className="text-xs px-3 mt-8 lg:mt-0 text-justify w-full lg:w-1/2 bg-prime rounded-2 px-3 py-2 whitespace-pre-line break-normal">
-              {`Tabel tersebut merupakan histori bahasa yang kami gunakan pada project-project kami saat ini.
+              }} /></div>
+              <p className="text-xs px-3 pt-3 lg:pt-4 ml-1 lg:ml-0 border-0 border-l lg:border-l-0 text-justify w-full lg:w-[48%] bg-nav rounded-2 py-2 whitespace-pre-line break-normal">
+                {`Tabel tersebut merupakan histori bahasa yang kami gunakan pada project-project kami saat ini.
 
-              Kami akan selalu belajar tentang bahasa pemrograman yang ada, mengingat banyaknya bahasa pemrograman yang ada.
+                Kami akan selalu belajar tentang bahasa pemrograman yang ada, mengingat banyaknya bahasa pemrograman yang ada.
 
-              @Zxra/CrzxaExe3
-              `}
-            </p>
+                @Zxra/CrzxaExe3
+                `}
+              </p>
             </div>
           </div>
-          <div className="self-center w-full  bg-nav rounded px-2 py-3 mb-2">
-            <SourceIcon className="bg-prime rounded p-1 text-tsec ml-2" sx={{ fontSize: 40 }} /><br/>
-            <b className="px-3 lg:text-lg">Open Source Repo</b>
-            <p className="text-sm px-3 text-justify">Kebanyakan project kami bersifat open source dan bisa digunakan siapa saja, namun untuk beberapa project, kami hanya sedikit membatasi penggunaanya. Kami juga akan selalu memperbarui kualitas koding kita(kalo tidak malas). Dokumentasi project juga dapat diakses dan mudah untuk dipahami(mungkin)</p>
+          <div className="self-center w-full px-2 py-3 mb-2">
+            <SourceIcon className="bg-nav rounded p-1 text-tsec" sx={{ fontSize: 40 }} />
+            <b className="lg:text-lg px-2">Open Source Repo</b>
+            <p className="text-sm px-3 pt-1 ml-1 border-0 border-l text-justify">Kebanyakan project kami bersifat open source dan bisa digunakan siapa saja, namun untuk beberapa project, kami hanya sedikit membatasi penggunaanya. Kami juga akan selalu memperbarui kualitas koding kita(kalo tidak malas). Dokumentasi project juga dapat diakses dan mudah untuk dipahami(mungkin)</p>
           </div>
-          <div className="self-center w-full lg:w-[49.3%] lg:mr-[0.7%] bg-nav rounded px-2 py-3">
-            <BackupTableIcon className="bg-prime rounded p-1 text-tsec ml-2" sx={{ fontSize: 40 }} /><br/>
-            <b className="px-3 lg:text-lg">Project</b>
-            <p className="text-sm px-3 text-justify">Masih terbilang sedikit namun kami akan terus berkarya menciptakan sesuatu yang baru bersama</p>
-            <a href="project" className="px-3 pb-2 pt-4 mt-1 text-tsec font-mono hover:text-navlogo text-xs lg:text-sm">Lihat Semua...</a>
+          <div className="self-center w-full lg:w-[49.3%] lg:mr-[0.7%] px-2 py-3">
+            <BackupTableIcon className="bg-nav rounded p-1 text-tsec" sx={{ fontSize: 40 }} />
+            <b className="px-2 lg:text-lg">Project</b>
+            <p className="text-sm px-2 pt-1 ml-1 text-justify border-0 border-l">Masih terbilang sedikit namun kami akan terus berkarya menciptakan sesuatu yang baru bersama</p>
+            <a href="project" className="px-2 pb-2 pt-4 mt-1 ml-1 border-0 border-l border-tprime text-tsec font-mono hover:text-navlogo text-xs lg:text-sm">Lihat Semua...</a>
           </div>
-          <div className="self-end w-full lg:w-[49.3%] lg:ml-[0.7%] pl-1 mt-2 lg:mt-0 bg-nav rounded px-2 py-3">
-            <Badge badgeContent={3} color="primary" className="lg:mt-1"><InterestsIcon className="bg-prime rounded p-1 text-tsec ml-2" sx={{ fontSize: 40 }} /></Badge><br/>
-            <b className="px-3 lg:text-lg">Sosial Media</b>
-            <p className="text-sm px-3 text-justify">Anda beminat menghubungi kami? Tenang saja kami memiliki beberapa sosial media seperti:</p>
-            <div className="flex mt-1 px-3">
+          <div className="self-end w-full lg:w-[49.3%] lg:ml-[0.7%] pl-1 mt-2 lg:mt-0 px-2 py-3">
+            <Badge badgeContent={3} color="primary" className="lg:mt-1"><InterestsIcon className="bg-nav rounded p-1 text-tsec" sx={{ fontSize: 40 }} /></Badge>
+            <b className="px-2 lg:text-lg">Sosial Media</b>
+            <p className="text-sm px-2 ml-1 border-0 border-l text-justify">Anda berminat menghubungi kami? Tenang saja kami memiliki beberapa sosial media seperti:</p>
+            <div className="flex pt-1 px-3 ml-1 border-0 border-l">
               <div className="px-[4px] rounded border-[1px] border-tprime text-sm flex items-center justify-center mr-1">
                 <i className='bx bxl-facebook' style={{color:'#ffffff'}}></i>
               </div>
@@ -122,7 +122,7 @@ function Home() {
         </div>
       </section>
 
-      <Footer right={{ link: "/gallery", text: "Gallery" }}/>
+      <Footer/>
     </div>
   );
 }

@@ -23,7 +23,7 @@ const BzbMechanics = ({ full }) => {
         {full ? (<div className="bg-nav px-3 py-2 mt-4">
           <b>Konten</b>
           <div>
-            {jsonData.sort((a, b) => a.name.localeCompare(b.name)).map(e => (<a className="before:content-['#'] text-active block" href={"#"+e.id}> {e.name}</a>))}
+            {jsonData.sort((a, b) => a.name.localeCompare(b.name)).map(e => (<a className="before:content-['#'] text-active block" href={"#"+e.id}> {e.name}{e.cs ? " <Belum Selesai>" : ""}</a>))}
           </div>
         </div>) : ""}
 
@@ -31,7 +31,7 @@ const BzbMechanics = ({ full }) => {
           if(e.cs) return;
           return (
           <div className="mt-5" id={e.id}>
-            <b className="text-sm">{e.name}</b>
+            <b className="text-sm">{e.name}{e.cs ? " <Belum Selesai>" : ""}</b>
             {e.ctn.map(r => {
               let split = r.split("/"), first = split[0], form = "";
 
