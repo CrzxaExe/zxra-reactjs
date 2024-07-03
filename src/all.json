@@ -95,6 +95,16 @@
       "des": "Idk, just created"
     },
     {
+      "name": "ZxraLib",
+      "ver": "1.0.0",
+      "act": true,
+      "stats": {
+        "lang": [ "javascript" ],
+        "app": "Minecraft Module Pkg"
+      },
+      "des": "Module for your minecraft addon, to use Zxra Function"
+    },
+    {
       "name": "Xdzr",
       "ver": "1.0.0",
       "act": false,

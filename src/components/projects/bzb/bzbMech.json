@@ -87,7 +87,10 @@
     "name": "Uang (Money)",
     "id": "money",
     "ctn": [
-      "Uang adalah segalanya, kamu bisa membeli apapun itu hanya dengan uang. Tapi kamu butuh kerja rodi untuk mendapatkan uang, atau kamu bisa minta kepada admin jika kamu bermain diserver"
+      "Uang adalah segalanya, kamu bisa membeli apapun itu hanya dengan uang. Tapi kamu butuh kerja rodi untuk mendapatkan uang, atau kamu bisa minta kepada admin jika kamu bermain diserver",
+
+      "full/Source code Money:",
+      "source/import { Entity } from 'system.js';"
     ]
   },
   {
@@ -95,7 +98,10 @@
     "id": "temp",
     "cs": true,
     "ctn": [
-      "Kamu bisa merasakan kedinginan ataupun kepanasan, Suhu tidak dapat ditahan oleh apapun dan hanya akan berubah sesuai dengan suasana sekitar"
+      "Kamu bisa merasakan kedinginan ataupun kepanasan, Suhu tidak dapat ditahan oleh apapun dan hanya akan berubah sesuai dengan suasana sekitar",
+
+      "full/Source code Temperature:",
+      "source/import { Entity } from 'system.js';"
     ]
   }
 ]

@@ -28,7 +28,7 @@ const BzbMechanics = ({ full }) => {
         </div>) : ""}
 
         {jsonData.sort((a, b) => a.name.localeCompare(b.name)).map(e => {
-          if(e.cs) return;
+          if(e.cs && !full) return;
           return (
           <div className="mt-5" id={e.id}>
             <b className="text-sm">{e.name}{e.cs ? " <Belum Selesai>" : ""}</b>
