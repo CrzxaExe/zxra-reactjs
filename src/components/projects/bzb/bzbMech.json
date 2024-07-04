@@ -4,6 +4,9 @@
     "id": "thirst",
     "ctn": [
       "Sesuai namanya ini merupakan mekanik yang mengharuskan kalian meminum air untuk bertahan hidup, kalian bisa saja mati karena tidak meminum air. Semua jenis minuman mau ramuan, atau botol air, akan mengisi kehausan kalian termasuk memakan buah-buahan",
+
+      "Kehausan akan terus berkurang 0.03 poin per detik. Namun ketika berlari ataupun berada di dimensi nether, poin kehausan akan semakin cepat berkurang dan ini bisa ditumpuk",
+
       "bold/Properti",
       "sub/• thirst.max\n   Maksimum range dari poin kehausan player",
       "sub/• thirst.value\n   Poin kehausan player",
@@ -45,7 +48,7 @@
       "mono/• resetRep(): <void>",
       "subpart/Mengatur ulang poin reputasi menjadi 0",
       "mono/• setRep(value): <void>",
-      "subpart/Mengatur poin reputasi menjadi value yang sudag ditetapkan",
+      "subpart/Mengatur poin reputasi menjadi value yang sudah ditetapkan",
 
       "full/Source code Reputation:",
       "source/import { Entity } from 'system.js';\n\nexport class Specialist extends Entity {\n  ..\n  getRep() {\n    return this.getData().reputation;\n  };\n  addRep(amount) {\n    let data = this.getData();\n    data.reputation +=  Number(amount);\n    if(data.reputation <= 0) data.reputation = 0;\n    this.setData(data);\n  };\n  minRep(amount) {\n    this.addRep(-Number(amount));\n  };\n  setRep(value) {\n    let data = this.getData();\n    data.reputation = Number(value);\n    this.setData(data);\n  };\n  resetRep() {\n    this.setRep(this.rawData.reputation);\n  };\n  ..\n}"
@@ -56,6 +59,10 @@
     "id": "stamina",
     "ctn": [
       "Waduh lelah nih, yap dengan ini kalian sekarang harus memperhatikan stamina kalian. Jangan terlalu lelah karna itu akan berbahaya untuk kalian",
+
+      "Saat melakukan aktivitas(berlari, menghancurkan block, berenang, terkena hit) stamina kalian akan berkurang dan stamina hanya baru bertambah setelah 3 detik tidak melakukan aktivitas tadi",
+      "Beraktivitas stamina berkurang 2 setiap detik\nRegenerasi Stamina bertambah 3 setiap detik",
+
       "bold/Properti",
       "sub/• stamina.add\n   Stamina dari leveling spesialist",
       "sub/• stamina.max\n   Maksimum range dari poin stamina player",
@@ -89,8 +96,22 @@
     "ctn": [
       "Uang adalah segalanya, kamu bisa membeli apapun itu hanya dengan uang. Tapi kamu butuh kerja rodi untuk mendapatkan uang, atau kamu bisa minta kepada admin jika kamu bermain diserver",
 
+      "bold/Method",
+      "mono/• addMoney(amount): <void>",
+      "subpart/Menambahkan data uang\namount: <number>",
+      "mono/• getMoney(): <number>",
+      "subpart/Menangambil data uang\nMengembalikan Money: <number>",
+      "mono/• takeMoney(amount): <void>",
+      "subpart/Mengurangi data uang\namount: <number>",
+      "mono/• resetMoney(): <void>",
+      "subpart/Mengatur ulang data uang menjadi 0",
+      "mono/• setMoney(value): <void>",
+      "subpart/Mengatur data menjadi value yang sudah ditetapkan",
+      "mono/• transferMoney(target, amount): <void>",
+      "subpart/Mengirim uang ke player lain dari player\ntarget: Minecraft<Player>\namount: <number>",
+
       "full/Source code Money:",
-      "source/import { Entity } from 'system.js';"
+      "source/import { Entity } from 'system.js';\n\nexport class Specialist extends Entity {\n  ..\n  getMoney() {\n    return this.getData().money;\n  };\n  addMoney(amount) {\n    let data = this.getData();\n    data.money += Number(amount);\n    this.setData(data);\n  };\n  takeMoney(amount) {\n    this.addMoney(-Number(amount));\n  };\n  setMoney(value) {\n    let data = this.getData();\n    data.money = Number(value);\n    this.setData(data);\n  };\n  resetMoney() {\n    this.setMoney(this.rawData.money);\n  };\n  transferMoney(target, amount) {\n    let data = new Specialist(target);\n    amount = Number(amount);\n\n    if(this.getMoney() < amount*1.2) return this.player.sendMessage({ rawtext: [{ translate: 'system.transfer.outMoney' },{ text: `$${amount*1.2}`}]});\n    data.addMoney(amount);\n    target.sendMessage({ rawtext: [{ translate: 'system.get' },{ text: ` $${amount} ` },{ translate: 'system.from' },{ text: ` ${this.player.name}` }]});\n    this.takeMoney(amount*1.2);\n    this.player.sendMessage({ rawtext: [{ translate: 'system.spend' },{ text: `$${amount*1.2} ` },{ translate: 'system.transfer.to' },{ text: `${target.name}` }]});\n  };\n  ..\n}"
     ]
   },
   {
@@ -101,7 +122,18 @@
       "Kamu bisa merasakan kedinginan ataupun kepanasan, Suhu tidak dapat ditahan oleh apapun dan hanya akan berubah sesuai dengan suasana sekitar",
 
       "full/Source code Temperature:",
-      "source/import { Entity } from 'system.js';"
+      "source/import { Entity } from 'system.js';\n\nexport class Specialist extends Entity {\n  .."
+    ]
+  },
+  {
+    "name": "Kekotoran (Dirty)",
+    "id": "dirty",
+    "cs": true,
+    "ctn": [
+      "Kalian perlu membersihkan badan agar tidak kotor.",
+
+      "full/Source code Dirty:",
+      "source/import { Entity } from 'system.js';\n\nexport class Specialist extends Entity {\n  .."
     ]
   }
 ]

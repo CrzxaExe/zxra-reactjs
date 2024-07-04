@@ -42,13 +42,13 @@ const Nav = ({ nav, setNav }) => {
       <NavLine name="Route"/>
 
       <div className="flex flex-col mt-9 lg:mt-2 text-sm w-[90%] lg:w-full font-['Valorant'] -tracking-[0.06rem]">
-        <div to="home" className="mb-1 flex items-center text-[1.06rem] truncate -ml-1 rounded lg:-ml-2 lg:hover:ml-0 px-2 py-[4px] bg-transparent hover:bg-navlogo transition-all ease-in-out duration-300" onClick={() => toPage("/")}>
-          <i className='bx bxs-home mr-1 text-[1.14rem]' style={{color:'#ffffff'}}  ></i>
-          <div className="tooltip ml-1">Beranda</div>
+        <div className="mb-1 flex items-center text-[1.06rem] truncate -ml-1 rounded lg:-ml-2 lg:hover:ml-0 px-2 py-[4px] bg-transparent hover:bg-navlogo transition-all ease-in-out duration-300" onClick={() => toPage("/")}>
+            <i className='bx bxs-home mr-1 text-[1.14rem]' style={{color:'#ffffff'}}  ></i>
+            <div className="tooltip ml-1">Beranda</div>
         </div>
         <div className="mb-1 flex items-center text-[1.06rem] truncate -ml-1 rounded lg:-ml-2 lg:hover:ml-0 px-2 py-[4px] bg-transparent hover:bg-navlogo transition-all ease-in-out duration-300" onClick={() => toPage("/gallery")}>
           <i className='bx bxs-photo-album mr-1 text-[1.14rem]' style={{color:'#ffffff'}}  ></i>
-          <div className="tooltip ml-1">Gallery</div>
+          <span className="tooltip ml-1">Gallery</span>
         </div>
         <div className="mb-1 flex items-center text-[1.06rem] truncate -ml-1 rounded lg:-ml-2 lg:hover:ml-0 px-2 py-[4px] bg-transparent hover:bg-navlogo transition-all ease-in-out duration-300" onClick={() => toPage("/project")}>
           <i className='bx bxs-folder mr-1 text-[1.14rem]' style={{color:'#ffffff'}}  ></i>

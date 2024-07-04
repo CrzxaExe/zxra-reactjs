@@ -30,7 +30,7 @@ const BzbMechanics = ({ full }) => {
         {jsonData.sort((a, b) => a.name.localeCompare(b.name)).map(e => {
           if(e.cs && !full) return;
           return (
-          <div className="mt-5" id={e.id}>
+          <div className="mt-5 h-full" id={e.id}>
             <b className="text-sm">{e.name}{e.cs ? " <Belum Selesai>" : ""}</b>
             {e.ctn.map(r => {
               let split = r.split("/"), first = split[0], form = "";

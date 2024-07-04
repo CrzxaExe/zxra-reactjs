@@ -22,7 +22,7 @@ function Home() {
     ],
     datasets: [{
       label: 'Project',
-      data: [4, 8, 3, 2],
+      data: [4, 9, 3, 2],
       backgroundColor: [
         'rgb(240, 136, 0)',
         'rgb(255, 205, 86)',
@@ -47,7 +47,7 @@ function Home() {
           <div className="w-full bg-tprime h-1 rounded"></div>
           <p className=" py-4 px-2 text-xs text-slate cz-line mt-3 text-left mb-4">Berikan inovasi kalian bersama kami di web ini<br/>Buat inovasimu menjadi nyata</p>
 
-          <Link to="project" className="bg-tsec py-1 px-5 rounded mx-auto mt-2 text-['Valorant'] text-prime border-2 border-tsec hover:bg-prime hover:text-tsec transition-all duration-300 ease-in-out">Project</Link>
+          <Link to="project" className="bg-tsec py-1 px-5 rounded mx-auto mt-2 text-prime border-2 border-tsec hover:bg-prime hover:text-tsec transition-all duration-300 ease-in-out"><b className="font-['Valorant']">Project</b></Link>
         </div>
         <div className="lg:w-1/3 self-end w-0 lg:mt-5 mb-7 relative lg:h-[80px]">
           <img src={lg} alt="Zxra Logo" className="lg:w-2/3 mx-auto w-0 lg:-mt-[5rem] absolute lg:-ml-[60px] pl-3" />
