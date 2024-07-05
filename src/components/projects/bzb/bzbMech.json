@@ -121,6 +121,18 @@
     "ctn": [
       "Kamu bisa merasakan kedinginan ataupun kepanasan, Suhu tidak dapat ditahan oleh apapun dan hanya akan berubah sesuai dengan suasana sekitar",
 
+      "bold/Method",
+      "mono/• add(amount): <void>",
+      "subpart/Menambahkan data suhu\namount: <number>",
+      "mono/• getTemp(): <number>",
+      "subpart/Menangambil data suhu\nMengembalikan Temp: <number>",
+      "mono/• min(amount): <void>",
+      "subpart/Mengurangi data suhu\namount: <number>",
+      "mono/• reset(): <void>",
+      "subpart/Mengatur ulang data suhu menjadi 32",
+      "mono/• set(value): <void>",
+      "subpart/Mengatur data menjadi value yang sudah ditetapkan",
+
       "full/Source code Temperature:",
       "source/import { Entity } from 'system.js';\n\nexport class Specialist extends Entity {\n  .."
     ]
