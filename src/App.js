@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import React, { lazy, Suspense, useState } from 'react';
 //import Home from "./components/Home";
-import Project from "./components/Project";
+//import Project from "./components/Project";
 import About from "./components/About";
 import Gallery from "./components/Gallery";
 import Nav from "./components/Nav";
@@ -14,6 +14,7 @@ import Bzb from "./components/projects/bzb/Bzb";
 import BzbMechanics from "./components/projects/bzb/BzbMechanics";
 
 const Home = lazy(() => import("./components/Home"))
+const Project = lazy(() => import("./components/Project"))
 
 function App() {
   const [nav, setNav] = useState(false);

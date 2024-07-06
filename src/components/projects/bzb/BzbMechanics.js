@@ -55,7 +55,7 @@ const BzbMechanics = ({ full }) => {
                   break;
                 case "source":
                   form = (
-                    <SyntaxHighlighter showLineNumbers={true} className="rounded mt-2 font-xs" language="javascript" customStyle={{ backgroundColor: "#44403c"}} style={coy}>
+                    <SyntaxHighlighter showLineNumbers={true} className="rounded mt-2 font-xs hidden" language="javascript" customStyle={{ backgroundColor: "#44403c"}} style={coy}>
                      {split[1]}
                     </SyntaxHighlighter>
                   )
