@@ -139,6 +139,18 @@
     "ctn": [
       "Kalian perlu membersihkan badan agar tidak kotor.",
 
+      "bold/Method",
+      "mono/• addVal(amount): <void>",
+      "subpart/Menambahkan data kekotoran\namount: <number>",
+      "mono/• getVal(): <number>",
+      "subpart/Menangambil data kekotoran\nMengembalikan Dirty: <number>",
+      "mono/• minValh(amount): <void>",
+      "subpart/Mengurangi data Kekotoran\namount: <number>",
+      "mono/• resetVal(): <void>",
+      "subpart/Mengatur ulang data kekotoran menjadi 0",
+      "mono/• setVal(value): <void>",
+      "subpart/Mengatur data menjadi value yang sudah ditetapkan",
+
       "source/import { Entity } from 'system.js';\n\nexport class Specialist extends Entity {\n  ..\n  dirtyness() {\n    return new Dirty(this.plyer);\n  };\n  ..\n}"
     ]
   }

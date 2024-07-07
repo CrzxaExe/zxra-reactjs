@@ -1,14 +1,15 @@
 import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import NavLine from "./NavLine";
 import lg from '../img/logo.png';
 
 const Nav = ({ nav, setNav }) => {
 
-  function toPage(path) {
+  /*function toPage(path) {
     if(window.location.pathname.replace("/","") === path.replace("/", "")) return;
 
     window.location.href = path;
-  }
+  }*/
 
   function navToggle() {
     setNav(!nav)
@@ -42,22 +43,22 @@ const Nav = ({ nav, setNav }) => {
       <NavLine name="Route"/>
 
       <div className="flex flex-col mt-9 lg:mt-2 text-sm w-[90%] lg:w-full font-['Valorant'] -tracking-[0.06rem]">
-        <div className="mb-1 flex items-center text-[1.06rem] truncate -ml-1 rounded lg:-ml-2 lg:hover:ml-0 px-2 py-[4px] bg-transparent hover:bg-navlogo transition-all ease-in-out duration-300" onClick={() => toPage("/")}>
+        <Link className="mb-1 flex items-center text-[1.06rem] truncate -ml-1 rounded lg:-ml-2 lg:hover:ml-0 px-2 py-[4px] bg-transparent hover:bg-navlogo transition-all ease-in-out duration-300" to="/">
             <i className='bx bxs-home mr-1 text-[1.14rem]' style={{color:'#ffffff'}}  ></i>
             <div className="tooltip ml-1">Beranda</div>
-        </div>
-        <div className="mb-1 flex items-center text-[1.06rem] truncate -ml-1 rounded lg:-ml-2 lg:hover:ml-0 px-2 py-[4px] bg-transparent hover:bg-navlogo transition-all ease-in-out duration-300" onClick={() => toPage("/gallery")}>
+        </Link>
+        <Link className="mb-1 flex items-center text-[1.06rem] truncate -ml-1 rounded lg:-ml-2 lg:hover:ml-0 px-2 py-[4px] bg-transparent hover:bg-navlogo transition-all ease-in-out duration-300" to="gallery">
           <i className='bx bxs-photo-album mr-1 text-[1.14rem]' style={{color:'#ffffff'}}  ></i>
           <span className="tooltip ml-1">Gallery</span>
-        </div>
-        <div className="mb-1 flex items-center text-[1.06rem] truncate -ml-1 rounded lg:-ml-2 lg:hover:ml-0 px-2 py-[4px] bg-transparent hover:bg-navlogo transition-all ease-in-out duration-300" onClick={() => toPage("/project")}>
+        </Link>
+        <Link className="mb-1 flex items-center text-[1.06rem] truncate -ml-1 rounded lg:-ml-2 lg:hover:ml-0 px-2 py-[4px] bg-transparent hover:bg-navlogo transition-all ease-in-out duration-300" to="project">
           <i className='bx bxs-folder mr-1 text-[1.14rem]' style={{color:'#ffffff'}}  ></i>
           <div className="tooltip ml-1">Project</div>
-        </div>
-        <div className="mb-1 flex items-center text-[1.06rem] truncate -ml-1 rounded lg:-ml-2 lg:hover:ml-0 px-2 py-[4px] bg-transparent hover:bg-navlogo transition-all ease-in-out duration-300" onClick={() => toPage("/about")}>
+        </Link>
+        <Link className="mb-1 flex items-center text-[1.06rem] truncate -ml-1 rounded lg:-ml-2 lg:hover:ml-0 px-2 py-[4px] bg-transparent hover:bg-navlogo transition-all ease-in-out duration-300" to="about">
           <i className='bx bxs-copyright mr-1 text-[1.14rem]' style={{color:'#ffffff'}}  ></i>
           <div className="tooltip ml-1">About</div>
-        </div>
+        </Link>
       </div>
     </nav>
   )

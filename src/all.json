@@ -11,15 +11,15 @@
         "content": [
           {
             "name": "Utama",
-            "link": "/project/bzb"
+            "link": "#"
           },
           {
             "name": "Mekanik",
-            "link": "/project/bzb/mechanics"
+            "link": "mechanics"
           }
         ]
       },
-      "link": "project/bzb",
+      "link": "bzb",
       "des": "Lets Enchant your journey with this addon\nAdds many features and new mechanics which such as RPG game"
     },
     {
@@ -59,9 +59,11 @@
       "act": true,
       "stats": {
         "lang": [ "html","CSS","JS" ],
-        "app": "Static Website"
+        "app": "Static Website",
+        "content": []
       },
-      "des": "Idk, just created"
+      "link": "bzb-web",
+      "des": "Website sederhana dari Better Zxra Bedrock yang sekarang sudah berpindah ke sini. Di dalam project website tersebut sudah menggunakan Tailwind untuk styling pagenya, namun hanya menggunakan CDN saja."
     },
     {
       "name": "Crzx Portofolio",
@@ -97,6 +99,7 @@
     {
       "name": "ZxraLib",
       "ver": "1.0.0",
+      "img": "https://avatars.githubusercontent.com/u/78332709?s=400&u=4aa87c566a5fb68af00b3f830e39200dcfee5529&v=4",
       "act": true,
       "stats": {
         "lang": [ "javascript" ],
@@ -117,7 +120,7 @@
     {
       "name": "Mkx",
       "ver": "1.6.9",
-      "img": "https://cdn.discordapp.com/avatars/992661371923746888/197d6cfddb7d3cdc96e4850d0c3f2e1e?size=1024",
+      "img": "https://cdn.discordapp.com/avatars/992661371923746888/c2a964bb36b1273e8acda8ee293f5f0f.webp?size=4096",
       "act": true,
       "stats": {
         "lang": [ "javascript" ],

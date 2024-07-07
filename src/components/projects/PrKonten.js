@@ -1,5 +1,6 @@
 // eslint-disable-next-line
 import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 function PrKonten({ content, open, openFunc }) {
   useEffect(() => {
@@ -22,7 +23,7 @@ function PrKonten({ content, open, openFunc }) {
       <div id="czkontenbar" className="border-0 border-l-[2px] transition-all duration-500 ease-in-out border-b-[2px] w-[11px] h-[11px] absolute right-5 top-2 origin-center-left lg:hidden -rotate-45"></div>
 
       <div id="czkonten" className="hidden mt-4 lg:mt-1 flex flex-wrap flex-col font-mono text-xs lg:block lg:text-sm bg-prime rounded-[4px] py-1">
-        {content.map(e => (<a className="block lg:px-2 border-l-2 pl-2 border-0 mr-1 text-tter" href={e.link ? e.link : "#"}>{e.name}</a> ))}
+        {content.map(e => (<Link to={e.link ? e.link : "#"} className="block lg:px-2 border-l-2 pl-2 border-0 mr-1 text-tter" >{e.name}</Link> ))}
       </div>
     </div>
   );
