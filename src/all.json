@@ -16,6 +16,10 @@
           {
             "name": "Mekanik",
             "link": "mechanics"
+          },
+          {
+            "name": "Misi",
+            "link": "quest"
           }
         ]
       },
@@ -35,6 +39,7 @@
     {
       "name": "Khyro Bot Discord",
       "ver": "2.8.0",
+      "img": "https://raw.githubusercontent.com/CrzxaExe/CrzxaExe/main/asset/khyro.png",
       "act": false,
       "stats": {
         "lang": [ "javascript" ],
@@ -45,6 +50,7 @@
     {
       "name": "Khyro Bot Whatsapp",
       "ver": "1.8.4",
+      "img": "https://raw.githubusercontent.com/CrzxaExe/CrzxaExe/main/asset/khyro.png",
       "act": false,
       "stats": {
         "lang": [ "javascript" ],
@@ -74,7 +80,8 @@
         "lang": [ "html","CSS","JS" ],
         "app": "Static Website"
       },
-      "des": "Idk, just created"
+      "link": "cz-portofolio",
+      "des": "Sebuah website portofolio dari CrzxaExe\nSederhana saja yaitu dengan menggunakan HTML, CSS & JavaScript pada umumnya"
     },
     {
       "name": "Cz DB",
@@ -84,6 +91,7 @@
         "lang": [ "javascript" ],
         "app": "Crud"
       },
+      
       "des": "Idk, just created"
     },
     {
@@ -105,6 +113,7 @@
         "lang": [ "javascript" ],
         "app": "Minecraft Module Pkg"
       },
+      "link": "ZxraLib",
       "des": "Module for your minecraft addon, to use Zxra Function"
     },
     {
@@ -137,6 +146,7 @@
         "lang": [ "json" ],
         "app": "Mindustry Mod"
       },
+      "link": "ZxraDustry",
       "des": "Just wanted to create"
     }
   ]

@@ -1,5 +1,6 @@
 // eslint-disable-next-line
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { coy } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import jsonData from './bzbMech';
@@ -8,7 +9,7 @@ const BzbMechanics = ({ full }) => {
 
   return (
     <div className="pb-2 mt-2">
-      {full ? (<a className="px-2 py-1 bg-nav rounded mt-[2.5rem] mb-5 inline-block" href="/project/bzb">Kembali</a>) : ""}
+      {full ? (<Link className="px-2 py-1 bg-nav rounded mt-[2.5rem] mb-5 inline-block" to="/project/bzb">Kembali</Link>) : ""}
 
       <b className="text-xl lg:text-2xl text-tsec block">
         {full ? "BZB | Mekanik" : "Mekanik"}
@@ -17,7 +18,7 @@ const BzbMechanics = ({ full }) => {
       <p className="text-xs lg:text-sm px-3 py-1 pb-3 w-full whitespace-pre-wrap text-justify">
         Bosen dengan mekanik original Minecraftnya? Kami menambahkan beberapa mekanik baru yang mungkin akan kalian inginkan didalam Minecraft,
         namun fitur ini masih belum stabil dan akan selalu di update untuk mengurangi bug yang ada di mekanik-mekanik tersebut. 
-        {!full ? (<> Dokumentasi semua mekanik addon ini ada <a className="text-tsec underline" href='/project/bzb/mechanics'>disini</a>. </>) : ""}
+        {!full ? (<> Dokumentasi semua mekanik addon ini ada <Link className="text-tsec underline" to='mechanics'>disini</Link>. </>) : ""}
         Berikut beberapa mekanik yang ada di addon ini:
 
         {full ? (<div className="bg-nav px-3 py-2 mt-4">
@@ -28,7 +29,7 @@ const BzbMechanics = ({ full }) => {
         </div>) : ""}
 
         {jsonData.sort((a, b) => a.name.localeCompare(b.name)).map(e => {
-          if(e.cs && !full) return;
+          if(e.cs && !full) return (<></>);
           return (
           <div className="mt-5 h-full" id={e.id}>
             <b className="text-sm">{e.name}{e.cs ? " <Belum Selesai>" : ""}</b>
@@ -36,7 +37,7 @@ const BzbMechanics = ({ full }) => {
               let split = r.split("/"), first = split[0], form = "";
 
               if(!split[1]) return (<p className="mt-2">{r}</p>)
-              if(!full) return;
+              if(!full) return (<></>);
               switch(first) {
                 case "full":
                   form = (<p className="mt-4">{split[1]}</p>)
@@ -60,9 +61,9 @@ const BzbMechanics = ({ full }) => {
                     </SyntaxHighlighter>
                   )
                   break;
-                default: return;
+                default: return (<></>);
               }
-              return form;
+              return (form);
             })}
           </div>
         ) })}

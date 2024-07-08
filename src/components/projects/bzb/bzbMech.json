@@ -36,7 +36,7 @@
     "name": "Reputasi (Reputation)",
     "id": "reputation",
     "ctn": [
-      "Reputasimu akan semakin tinggi jika menyelesaikan misi. Semakin tinggi reputasimu, misi yang didapat makin beragam dan juga hadiah yang didapat lebih banyak",
+      "Reputasimu akan semakin tinggi jika menyelesaikan misi. Semakin tinggi reputasimu, misi yang didapat makin beragam dan juga hadiah yang didapat lebih banyak. Disaat kamu mati, reputasimu berkurang 20%",
       "bold/Method",
       "mono/• addRep(amount): <void>",
       "subpart/Menambahkan poin reputasi\namount: <number>",

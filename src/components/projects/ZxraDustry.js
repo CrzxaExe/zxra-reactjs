@@ -2,14 +2,14 @@ import React from 'react';
 import TextLine from '../TextLine';
 import jsonData from '../../all.json';
 
-function BzbWeb() {
-  const { img, act, des, name, ver, stats: { app, lang } } = jsonData.project.find(e => e.name === "BZB Web")
+function ZxraDustry() {
+  const { img, act, des, name, ver, stats: { app, lang } } = jsonData.project.find(e => e.name === "ZxraDustry")
 
   return (
     <div className="mt-[2.25rem] lg:mt-[1.6rem] -z-1 lg:h-[93vh] -mb-[6rem]">
       <header className="w-full pb-2 pt-4 lg:pt-7 flex lg:flex-col items-end lg:items-start mt-[0.5rem]">
-        <div className="font-bold text-xl lg:text-2xl mr-3 text-tsec"><span className="lg:hidden">BZB - Web</span><span className="hidden lg:block">BZB - Website</span></div>
-        <div className="before:content-['>'] lg:before:content-[''] before:mr-2 lg:before:mr-0 before:text-xl -mt-2 text-tter">Website lama dari BZB</div>
+        <div className="font-bold text-xl lg:text-2xl mr-3 text-tsec">ZxraDustry</div>
+        <div className="before:content-['>'] lg:before:content-[''] before:mr-2 lg:before:mr-0 before:text-xl -mt-2 text-tter">Mod untuk Mindustry</div>
       </header>
 
       <section id="home" className="w-full py-2 flex flex-wrap flex-row-reverse -mt-2 text-sm h-[94%]">
@@ -32,4 +32,4 @@ function BzbWeb() {
   );
 }
 
-export default BzbWeb;
+export default ZxraDustry;

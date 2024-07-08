@@ -30,7 +30,7 @@ function Project() {
 
 const ProjectList = ({ name, lang, app, ver, act, des, img, link }) => {
   return (
-    <Link to={link ? link : "#"} className="cz-transition bg-navLogo aspect-square rounded relative z-0">
+    <Link to={link ? link : "#"} className="z-[0] cz-transition bg-navLogo aspect-square rounded relative z-0">
       {img ? (<img loading="lazy" className="transition-all duration-300 ease-in-out object-cover hover:opacity-[0.5] aspect-square rounded" src={img} alt={name}/>) : (<div className="bg-nav w-full aspect-square"></div>)}
       <div className="absolute top-0 px-2 py-3 font-bold text-[0.6rem] lg:text-[0.72rem] font-['valorant'] -tracking-[0.06rem] text-white block">
         <b className="py-1 px-2 bg-nav rounded">{name}</b>

@@ -3,6 +3,7 @@ import axios from 'axios';
 import TextLine from '../../TextLine';
 import PrKonten from '../PrKonten';
 import BzbMechanics from './BzbMechanics';
+import BzbQuest from './BzbQuest';
 import jsonData from '../../../all.json';
 
 function Bzb() {
@@ -43,7 +44,7 @@ function Bzb() {
             <span className="block bg-nav rounded px-2 py-1 whitespace-pre"><i className='bx bx-note mr-1 text-sm' style={{color:'#ffffff'}}  ></i><p className="pb-3">{des}</p></span>
           </p>
 
-          <TextLine name="Versi"/>
+          <TextLine name="Unduh"/>
 
           <div className="text-xs lg:text-sm px-2 lg:px-7 w-full">
             <span>Versi yang tersedia, klik untuk menuju link download</span>
@@ -72,6 +73,7 @@ function Bzb() {
           <TextLine name="Fitur"/>
 
           <BzbMechanics/>
+          <BzbQuest/>
         </div>
       </section>
 

@@ -45,11 +45,17 @@ function About() {
               let dep = pkgs.dependencies[r]
               return "• "+ r +" v"+ dep
             }).join('\n')}
+
+            Dependensi Dev:
+            ${Object.keys(pkgs.devDependencies).map(r => {
+              let dep = pkgs.devDependencies[r]
+              return "• "+ r +" v"+ dep
+            }).join('\n')}
           `}</p>
         </div>
       </section>
 
-    <Footer left={{ link: "/project", text: "Project" }}/>
+    <Footer/>
     </div>
   );
 }

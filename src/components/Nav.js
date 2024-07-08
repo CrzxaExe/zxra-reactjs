@@ -5,12 +5,6 @@ import lg from '../img/logo.png';
 
 const Nav = ({ nav, setNav }) => {
 
-  /*function toPage(path) {
-    if(window.location.pathname.replace("/","") === path.replace("/", "")) return;
-
-    window.location.href = path;
-  }*/
-
   function navToggle() {
     setNav(!nav)
   }
