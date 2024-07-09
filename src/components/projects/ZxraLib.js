@@ -14,7 +14,7 @@ function ZxraLib() {
 
       <section id="home" className="w-full py-2 flex flex-wrap flex-row-reverse -mt-2 text-sm h-[94%]">
         <div className="w-full pb-[10vw]">
-          <img src={img} className="w-full lg:w-[80%] mx-auto mt-4 rounded-[6px] lg:rounded-[10px] block px-1" alt={name} />
+          <img src={img} className="w-full lg:w-[30%] mx-auto mt-4 rounded-[6px] lg:rounded-[10px] block px-1" alt={name} />
 
           <TextLine name="Ringkasan"/>
 

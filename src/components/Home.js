@@ -108,15 +108,15 @@ function Home() {
             <b className="px-2 lg:text-lg">Sosial Media</b>
             <p className="text-sm px-2 ml-1 border-0 border-l text-justify">Anda berminat menghubungi kami? Tenang saja kami memiliki beberapa sosial media seperti:</p>
             <div className="flex pt-1 px-3 ml-1 border-0 border-l">
-              <div className="px-[4px] rounded border-[1px] border-tprime text-sm flex items-center justify-center mr-1">
+              <a href="https://www.facebook.com/crzx.zxra" className="px-[4px] rounded border-[1px] border-tprime text-sm flex items-center justify-center mr-1">
                 <i className='bx bxl-facebook' style={{color:'#ffffff'}}></i>
-              </div>
-              <div className="px-[4px] rounded border-[1px] border-tprime text-sm flex items-center justify-center mr-1">
+              </a>
+              <a href="https://wa.me/62895392851501" className="px-[4px] rounded border-[1px] border-tprime text-sm flex items-center justify-center mr-1">
                 <i className='bx bxl-whatsapp' style={{color:'#ffffff'}}></i>
-              </div>
-              <div className="px-[4px] rounded border-[1px] border-tprime text-sm flex items-center justify-center mr-1">
+              </a>
+              <a href="https://youtube.com/@crzxdsubscribe?si=6N-fu5epVTvdD4Dn" className="px-[4px] rounded border-[1px] border-tprime text-sm flex items-center justify-center mr-1">
                 <i className='bx bxl-youtube' style={{color:'#ffffff'}}></i>
-              </div>
+              </a>
             </div>
           </div>
         </div>

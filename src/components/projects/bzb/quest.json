@@ -1,0 +1,246 @@
+[
+  {
+    "name": "Dapatkan Beberapa Pembusuk / Gets Some Rotten",
+    "des": "Bunuh beberapa Mayat Hidup, mereka sangat menyebalkan",
+    "rep": 0,
+    "task": [
+      { "act": "bunuh", "target": "zombie", "amount": 90 }
+    ],
+    "reward": [
+      { "type": "cash", "amount": 123.4 },
+      { "type": "rep", "amount": 3 },
+      { "type": "voxn", "amount": 2 },
+      { "type": "item/cz:diamond_ascend", "amount": 1 },
+      { "type": "item/iron_ingot", "amount": 3 }
+    ]
+  },
+  {
+    "name": "Butuh Beberapa Tulang / Need Some Bone",
+    "des": "Bunuh beberapa Tengkorak, dibutuhkan untuk para serigala karena mereka ingin itu",
+    "rep": 0,
+    "task": [
+      { "act": "Bunuh", "target": "skeleton", "amount": 100 }
+    ],
+    "reward": [
+      { "type": "cash", "amount": 118.6 },
+      { "type": "rep", "amount": 4 },
+      { "type": "voxn", "amount": 2 },
+      { "type": "item/cz:diamond_ascend", "amount": 1 }
+    ]
+  },
+  {
+    "name": "Awas Ledakan / Warning Explosion",
+    "des": "Bunuh beberapa Creeper, hati-hati dengan ledakan mereka, mereka meledak kapanpun dan dimanapun",
+    "rep": 0,
+    "task": [
+      { "act": "bunuh", "target": "creeper", "amount": 40 }
+    ],
+    "reward": [
+      { "type": "cash", "amount": 130.8 },
+      { "type": "rep", "amount": 4 },
+      { "type": "voxn", "amount": 2 },
+      { "type": "item/cz:diamond_ascend", "amount": 1 },
+      { "type": "item/gunpowder", "amount": 40 }
+    ]
+  },
+  {
+    "name": "Busuk dan Tulang / Rotten and Bone",
+    "des": "Bunuh Mayat Hidup dan Tengkorak, Kenapa kita tidak bunuh saja keduanya bersama untuk penghargaan",
+    "rep": 0,
+    "task": [
+      { "act": "bunuh", "target": "zombie", "amount": 80 },
+      { "act": "bunuh", "target": "skeleton", "amount": 100 }
+    ],
+    "reward": [
+      { "type": "cash", "amount": 146.4 },
+      { "type": "rep", "amount": 8 },
+      { "type": "voxn", "amount": 4 },
+      { "type": "item/cz:diamond_ascend", "amount": 1 },
+      { "type": "item/gunpowder", "amount": 80 }
+    ]
+  },
+  {
+    "name": "Penggalian Kotor / Dirty Excavation",
+    "des": "Hancurkan banyak Tanah dan Batu Kerikil, Bersama kuli membangun negeri",
+    "rep": 0,
+    "task": [
+      { "act": "hancurkan", "target": "dirt", "amount": 200 },
+      { "act": "hancurkan", "target": "stone", "amount": 75 }
+    ],
+    "reward": [
+      { "type": "cash", "amount": 90.2 },
+      { "type": "rep", "amount": 7 },
+      { "type": "voxn", "amount": 4 },
+      { "type": "item/iron_pickaxe", "amount": 1 }
+    ]
+  },
+  {
+    "name": "Perkacaan / Glassity",
+    "des": "Hancurkan banyak Pasir, butuh banyak kaca njir coeg",
+    "rep": 0,
+    "task": [
+      { "act": "Hancurkan", "target": "sand", "amount": 94 }
+    ],
+    "reward": [
+      { "type": "cash", "amount": 90.6 },
+      { "type": "voxn", "amount": 2 },
+      { "type": "rep", "amount": 5 }
+    ]
+  },
+  {
+    "name": "Pemburu Monster 1 / Monster Hunter 1",
+    "des": "Bunuh Creeper, Tengkorak dan Mayat Hidup, tiga menjadi satu bukan menjadi masalah",
+    "rep": 50,
+    "task": [
+      { "act": "bunuh", "target": "creeper", "amount": 50 },
+      { "act": "bunuh", "target": "skeleton", "amount": 90 },
+      { "act": "bunuh", "target": "zombie", "amount": 120 }
+    ],
+    "reward": [
+      { "type": "cash", "amount": 386.9 },
+      { "type": "rep", "amount": 8 },
+      { "type": "voxn", "amount": 6 },
+      { "type": "item/cz:diamond_ascend", "amount": 1 },
+      { "type": "item/cz:plasma_ingot", "amount": 4 }
+    ]
+  },
+  {
+    "name": "Naga? / Dragons?",
+    "des": "Bunuh Naga Terakhir, selesaikan perjalananmu",
+    "rep": 60,
+    "task": [
+      { "act": "bunuh", "target": "ender_dragon", "amount": 1 }
+    ],
+    "reward": [
+      { "type": "cash", "amount": 223.9 },
+      { "type": "rep", "amount": 8 },
+      { "type": "voxn", "amount": 4 },
+      { "type": "item/cz:diamond_ascend", "amount": 1 }
+    ]
+  },
+  {
+    "name": "Banyak sekali Naganya / So Many Dragons",
+    "des": "Bunuh beberapa Naga Terakhir, bawakdehel kamu pengangguran",
+    "rep": 120,
+    "task": [
+      { "act": "bunuh", "target": "ender_dragon", "amount": 5 }
+    ],
+    "reward": [
+      { "type": "cash", "amount": 1239.8 },
+      { "type": "rep", "amount": 18 },
+      { "type": "voxn", "amount": 14 },
+      { "type": "item/cz:diamond_ascend", "amount": 2 },
+      { "type": "item/end_crystal", "amount": 4 }
+    ]
+  },
+  {
+    "name": "Lapis lagi / Lapis Again",
+    "des": "Hancurkan beberapa Bijih Lapis, tingkatkan baju zirahmu",
+    "rep": 0,
+    "task": [
+      { "act": "hancurkan", "target": "lapis_ore", "amount": 43 }
+    ],
+    "reward": [
+      { "type": "cash", "amount": 78.8 },
+      { "type": "rep", "amount": 3 },
+      { "type": "voxn", "amount": 2 }
+    ]
+  },
+  {
+    "name": "Buldoser / Bulldozer",
+    "des": "Hancurkan banyak Batu dan Batu Kerikil, Jangan menyerah karena ini adalah tugasmu jadi jangan malas",
+    "rep": 50,
+    "task": [
+      { "act": "hancurkan", "target": "stone", "amount": 238 },
+      { "act": "hancurkan", "target": "cobblestone", "amount": 85 }
+    ],
+    "reward": [
+      { "type": "cash", "amount": 92.4 },
+      { "type": "rep", "amount": 7 },
+      { "type": "voxn", "amount": 4 },
+      { "type": "item/iron_block", "amount": 9 }
+    ]
+  },
+  {
+    "name": "Buldoser Neraka / Nether Bulldozer",
+    "des": "Hancurkan Netherack, tiada hari tanpa kerjaan",
+    "rep": 50,
+    "task": [
+      { "act": "hancurkan", "target": "netherrack", "amount": 164 }
+    ],
+    "reward": [
+      { "type": "cash", "amount": 55.6 },
+      { "type": "rep", "amount": 6 },
+      { "type": "voxn", "amount": 2 },
+      { "type": "item/blaze_rod", "amount": 5 }
+    ]
+  },
+  {
+    "name": "Mangan Rek",
+    "des": "Bunuh Domba dan Sapi, mukbang rek",
+    "rep": 20,
+    "task": [
+      { "act": "bunuh", "target": "sheep", "amount": 83 },
+      { "act": "bunub", "target": "cow", "amount": 76 }
+    ],
+    "reward": [
+      { "type": "cash", "amount": 76.3 },
+      { "type": "rep", "amount": 3 },
+      { "type": "voxn", "amount": 4 },
+      { "type": "item/cooked_mutton", "amount": 64 }
+    ]
+  },
+  {
+    "name": "Tantangan Dev / Developer Challenge",
+    "des": "Bunuh Kyle, ingin hidupmu menantang coba lah untuk kalahin boss ini",
+    "rep": 500,
+    "task": [
+      { "act": "bunuh", "target": "kyle", "amount": 1 }
+    ],
+    "reward": [
+      { "type": "cash", "amount": 1203.25 },
+      { "type": "rep", "amount": 12 },
+      { "type": "voxn", "amount": 25 },
+      { "type": "item/cz:diamond_ascend", "amount": 24 }
+    ]
+  },
+  {
+    "name": "Pembahan Bakaran Tungku / Fueling Furnace",
+    "des": "Tambang beberapa Bijih Batu Bara, butuh beberapa coal untuk melelehkan atau memasak, bergerak cepat sedang butuh sekarang",
+    "rep": 0,
+    "task": [
+      { "act": "hancurkan", "target": "coal_ore", "amount": 128 }
+    ],
+    "reward": [
+      { "type": "cash", "amount": 77.2 },
+      { "type": "rep", "amount": 3 },
+      { "type": "voxn", "amount": 2 }
+    ]
+  },
+  {
+    "name": "Pembesian / Ironification",
+    "des": "Tambang beberapa Bijih Besi, zaman batu telah berakhir sekarang kita masuk ke zaman besi yang berarti kita membutuhkan besi",
+    "rep": 0,
+    "task": [
+      { "act": "hancurkan", "target": "iron_ore", "amount": 128 }
+    ],
+    "reward": [
+      { "type": "cash", "amount": 69.7 },
+      { "type": "rep", "amount": 3 },
+      { "type": "voxn", "amount": 2 }
+    ]
+  },
+  {
+    "name": "Penambang Emas / Gold Digger",
+    "des": "Tambang beberapa Bijih Emas, kita butuh uaaaaaangggggg!",
+    "rep": 0,
+    "task": [
+      { "act": "hancurkan", "target": "gold_ore", "amount": 128 }
+    ],
+    "reward": [
+      { "type": "cash", "amount": 72.2 },
+      { "type": "rep", "amount": 5 },
+      { "type": "voxn", "amount": 2 }
+    ]
+  }
+]

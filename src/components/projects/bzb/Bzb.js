@@ -4,6 +4,7 @@ import TextLine from '../../TextLine';
 import PrKonten from '../PrKonten';
 import BzbMechanics from './BzbMechanics';
 import BzbQuest from './BzbQuest';
+import BzbUi from './BzbUi';
 import jsonData from '../../../all.json';
 
 function Bzb() {
@@ -74,6 +75,22 @@ function Bzb() {
 
           <BzbMechanics/>
           <BzbQuest/>
+          <BzbUi/>
+
+          <TextLine name="Tentang"/>
+
+          <p className="px-2 lg:px-7 w-full text-xs lg:text-sm pb-[1.2rem] truncate whitespace-pre-wrap text-justify">
+            Addon ini masih dalam tahap pengembangan. Kami masih perlu memperbaiki
+            dan meningkatkan performanya. Kami juga akan bekerja sama dengan para
+            Addon Creator yang ada, dengan tujuan meningkatkan kualitas addon ini.<br/><br/>
+            Terimakasih kepada:<br/>
+            • FySena & Member Server Sena Surv<br/>
+            • Knightfall Garmeong (FB)<br/>
+            • Haris Adhi Pedo njir (FB)<br/>
+            • Aditya (FB)<br/>
+            • Rahmad<br/>
+            • Omen (FB)<br/>
+          </p>
         </div>
       </section>
 

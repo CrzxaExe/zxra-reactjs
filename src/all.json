@@ -34,12 +34,13 @@
         "lang": [ "javascript", "json" ],
         "app": "Restfull API"
       },
+      "link": "ZxraRest",
       "des": "Connected to your Zxra Client"
     },
     {
       "name": "Khyro Bot Discord",
       "ver": "2.8.0",
-      "img": "https://raw.githubusercontent.com/CrzxaExe/CrzxaExe/main/asset/khyro.png",
+      "img": "https://raw.githubusercontent.com/CrzxaExe/CrzxaExe/main/asset/Logo_Khyro.png",
       "act": false,
       "stats": {
         "lang": [ "javascript" ],
@@ -50,7 +51,7 @@
     {
       "name": "Khyro Bot Whatsapp",
       "ver": "1.8.4",
-      "img": "https://raw.githubusercontent.com/CrzxaExe/CrzxaExe/main/asset/khyro.png",
+      "img": "https://raw.githubusercontent.com/CrzxaExe/CrzxaExe/main/asset/Logo_Khyro.png",
       "act": false,
       "stats": {
         "lang": [ "javascript" ],
@@ -91,8 +92,8 @@
         "lang": [ "javascript" ],
         "app": "Crud"
       },
-      
-      "des": "Idk, just created"
+      "link": "cz-db",
+      "des": "Database buatan CrzxaExe"
     },
     {
       "name": "Chatlify",
@@ -102,7 +103,8 @@
         "lang": [ "javascript" ],
         "app": "Full Stack App"
       },
-      "des": "Idk, just created"
+      "link": "Chatlify",
+      "des": "Website chatting"
     },
     {
       "name": "ZxraLib",
@@ -147,7 +149,7 @@
         "app": "Mindustry Mod"
       },
       "link": "ZxraDustry",
-      "des": "Just wanted to create"
+      "des": "Mod untuk game Mindustry, namun kami sudah jarang mengupdatenya. Ini hanya baru percobaan, mungkin nanti akan dilanjutkan"
     }
   ]
 }

@@ -10,12 +10,16 @@ import TopBar from "./components/TopBar";
 // BZB
 import Bzb from "./components/projects/bzb/Bzb";
 import BzbMechanics from "./components/projects/bzb/BzbMechanics";
+import BzbUi from "./components/projects/bzb/BzbUi";
 import BzbQuest from "./components/projects/bzb/BzbQuest";
 
 import BzbWeb from "./components/projects/BzbWeb";
+import Chatlify from "./components/projects/Chatlify";
+import CzDb from "./components/projects/CzDb";
 import CzPortofolio from "./components/projects/CzPortofolio";
 import ZxraDustry from "./components/projects/ZxraDustry";
 import ZxraLib from "./components/projects/ZxraLib";
+import ZxraRest from "./components/projects/ZxraRest";
 
 const Home = lazy(() => import("./components/Home"))
 const Project = lazy(() => import("./components/Project"))
@@ -38,12 +42,16 @@ function App() {
             <Route exact path="/" element={<Home/>} />
 
             <Route exact path="project/bzb-web" element={<BzbWeb/>} />
+            <Route exact path="project/Chatlify" element={<Chatlify/>} />
+            <Route exact path="project/cz-db" element={<CzDb/>} />
             <Route exact path="project/cz-portofolio" element={<CzPortofolio/>} />
             <Route exact path="project/ZxraDustry" element={<ZxraDustry/>} />
             <Route exact path="project/ZxraLib" element={<ZxraLib/>} />
+            <Route exact path="project/ZxraRest" element={<ZxraRest/>} />
 
             <Route exact path="project/bzb/" element={<Bzb/>} />
             <Route exact path="project/bzb/mechanics" element={<BzbMechanics full={true} />} />
+            <Route exact path="project/bzb/ui" element={<BzbUi full={true} />} />
             <Route exact path="project/bzb/quest" element={<BzbQuest full={true} />} />
           </Routes>
         </div>

@@ -39,7 +39,7 @@ const ProjectList = ({ name, lang, app, ver, act, des, img, link }) => {
       <div className="absolute bottom-0 px-2 py-1 text-[0.5rem] lg:text-[0.58rem]">
         <span className="font-mono rounded bg-nav px-1">v{ver}</span><br/>
         <div className="hidden lg:inline-flex items-center rounded bg-nav px-1 mb-[0.1rem]"><i className='bx bx-code-curly mr-1 text-sm' style={{color:'#ffffff'}}  ></i> {lang.map(r => r.charAt(0).toUpperCase() + r.slice(1)).join(", ")}</div>
-        <div className="flex items-center rounded bg-nav px-1"><i className='bx bx-mobile-landscape mr-1 text-sm' style={{color:'#ffffff'}}  ></i> {app}</div>
+        <div className="hidden lg:inline-flex items-center rounded bg-nav px-1"><i className='bx bx-mobile-landscape mr-1 text-sm' style={{color:'#ffffff'}}  ></i> {app}</div>
       </div>
     </Link>
   )
