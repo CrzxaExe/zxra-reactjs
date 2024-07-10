@@ -32,7 +32,7 @@ function Bzb() {
       <section id="home" className="w-full py-2 flex flex-wrap flex-row-reverse -mt-2 text-sm h-[94%] overflow-y-hidden">
         <PrKonten content={content} open={ktn} openFunc={setKtn}/>
 
-        <div className="w-full lg:w-[74%] lg:h-full overflow-scroll pb-[10vw]">
+        <div className="w-full lg:w-[78.5%] lg:h-full overflow-scroll pb-[10vw]">
           <img src={img} className="w-full lg:w-[80%] mx-auto mt-4 rounded-[6px] lg:rounded-[10px] block px-1" alt={name} />
 
           <TextLine name="Ringkasan"/>
@@ -86,7 +86,7 @@ function Bzb() {
             Terimakasih kepada:<br/>
             • FySena & Member Server Sena Surv<br/>
             • Knightfall Garmeong (FB)<br/>
-            • Haris Adhi Pedo njir (FB)<br/>
+            • Haris Adhi Saputra Pedo njir (FB)<br/>
             • Aditya (FB)<br/>
             • Rahmad<br/>
             • Omen (FB)<br/>

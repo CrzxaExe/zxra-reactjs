@@ -13,9 +13,10 @@ const BzbUi = ({ full }) => {
 
       <p className="text-xs lg:text-sm px-3 py-1 pb-3 w-full whitespace-pre-wrap text-justify">
         Kami menawarkan tampilan UI simpel dan minimalist. 
-        Disertai nuasa normal dari kami yang mungkin akan membuat anda 
-        suka style kami.
-        {full ? (<> Selengkapnya ada <Link className="text-tsec underline" to='ui'>disini</Link>. </>) : ""}
+        Disertai nuasa normal dari kami yang mungkin akan membuat anda menyukai style kami.
+        Beberapa layar juga sudah kami lakukan full modifikasi.
+        Blok juga ada beberapa yang kami tambahkan seperti variasi ataupun animasi baru dari blok mau itu dari addon ini ataupun vanilla Minecraft. 
+        {!full ? (<> Selengkapnya ada <Link className="text-tsec underline" to='ui'>disini</Link>. </>) : ""}
       </p>
     </div>
   )

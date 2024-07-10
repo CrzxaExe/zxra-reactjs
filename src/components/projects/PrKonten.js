@@ -17,12 +17,12 @@ function PrKonten({ content, open, openFunc }) {
   }, [open])
 
   return (
-    <div className="w-full relative lg:w-[23%] lg:ml-[2%] py-2 px-3 bg-nav overflow-y-scroll transition-all duration-300 ease-in-out" onClick={() => openFunc(!open)}>
+    <div className="w-full relative lg:w-[20%] bg-nav lg:bg-nav/[0] lg:ml-[1.5%] lg:-top-2 py-2 px-3 overflow-y-scroll transition-all duration-300 ease-in-out" onClick={() => openFunc(!open)}>
       <b>Konten</b>
 
       <div id="czkontenbar" className="border-0 border-l-[2px] transition-all duration-500 ease-in-out border-b-[2px] w-[11px] h-[11px] absolute right-5 top-2 origin-center-left lg:hidden -rotate-45"></div>
 
-      <div id="czkonten" className="hidden mt-4 lg:mt-1 flex flex-wrap flex-col font-mono text-xs lg:block lg:text-sm bg-prime rounded-[4px] py-1">
+      <div id="czkonten" className="hidden mt-4 lg:mt-1 flex flex-wrap flex-col font-mono text-xs lg:block bg-prime rounded-[4px] py-1">
         {content.map(e => (<Link to={e.link ? e.link : "#"} className="block lg:px-2 border-l-2 pl-2 border-0 mr-1 text-tter" >{e.name}</Link> ))}
       </div>
     </div>

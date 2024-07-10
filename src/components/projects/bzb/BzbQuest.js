@@ -37,7 +37,7 @@ const BzbQuest = ({ full }) => {
                   {e.des}<br/>
                   <span className="bg-nav py-2 px-2 block -left-2 relative my-1">Minimal reputasi {e.rep}</span>
                   Tugas:<br/>
-                  {e.task.map(r => (<>• {r.act.charAt(0).toUpperCase() + r.act.slice(1)} {r.target.replace("cz:","")} {r.amount} kali<br/></>))}
+                  {e.task.map(r => (<>• {r.act.charAt(0).toUpperCase() + r.act.slice(1)} {r.target.replace("cz:","").replace(/_/g, " ")} {r.amount} kali<br/></>))}
                   <br/>
                   Hadiah:
                   {
@@ -51,6 +51,7 @@ const BzbQuest = ({ full }) => {
                           let item = split[1].replace("cz:","").replace(/_/gi, " ").split(" ").map(f => f.charAt(0).toUpperCase() + f.slice(1)).join(" ");
                           ret = `• ${r.amount} Item ${item}`;
                           break;
+                        default: ret = ""
                       }
                       return (<><br/>{ret}</>)
                     })

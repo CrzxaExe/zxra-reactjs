@@ -20,11 +20,15 @@
           {
             "name": "Misi",
             "link": "quest"
+          },
+          {
+            "name": "Tampilan",
+            "link": "ui"
           }
         ]
       },
       "link": "bzb",
-      "des": "Lets Enchant your journey with this addon\nAdds many features and new mechanics which such as RPG game"
+      "des": "Lets Enchant your journey with this addon\nAdds many features and new mechanics which such as RPG game\nDifficulty the game has been increased, such as a mob has unique ability,\nnew mechanics and many more"
     },
     {
       "name": "Zxra Rest",
@@ -38,7 +42,7 @@
       "des": "Connected to your Zxra Client"
     },
     {
-      "name": "Khyro Bot Discord",
+      "name": "Khyro Discord Bot",
       "ver": "2.8.0",
       "img": "https://raw.githubusercontent.com/CrzxaExe/CrzxaExe/main/asset/Logo_Khyro.png",
       "act": false,
@@ -46,10 +50,11 @@
         "lang": [ "javascript" ],
         "app": "Discord Bot"
       },
-      "des": "Idk, just created\nBut this will be updated soon"
+      "link": "khyro-dc",
+      "des": "Idk, just created\nThis is a first version of MKx Discord Bot"
     },
     {
-      "name": "Khyro Bot Whatsapp",
+      "name": "Khyro Whatsapp Bot",
       "ver": "1.8.4",
       "img": "https://raw.githubusercontent.com/CrzxaExe/CrzxaExe/main/asset/Logo_Khyro.png",
       "act": false,
@@ -57,7 +62,8 @@
         "lang": [ "javascript" ],
         "app": "Whatsapp Bot"
       },
-      "des": "Idk, just created"
+      "link": "khyro-wa",
+      "des": "Nyoba doank aslinya, cuman lanjut part 2"
     },
     {
       "name": "BZB Web",
@@ -123,13 +129,13 @@
       "ver": "1.0.0",
       "act": false,
       "stats": {
-        "lang": [ "typescript" ],
-        "app": "React Native App"
+        "lang": [ "Dart" ],
+        "app": "Flutter Ap"
       },
       "des": "Idk, just created"
     },
     {
-      "name": "Mkx",
+      "name": "MKx",
       "ver": "1.6.9",
       "img": "https://cdn.discordapp.com/avatars/992661371923746888/c2a964bb36b1273e8acda8ee293f5f0f.webp?size=4096",
       "act": true,
@@ -137,7 +143,8 @@
         "lang": [ "javascript" ],
         "app": "Discord & Whatsapp Bot"
       },
-      "des": "Eazier your tasks"
+      "link": "mkx",
+      "des": "Eazier your tasks\nBot with multi functional command(maybe).\nWe will update it everytime"
     },
     {
       "name": "ZxraDustry",
