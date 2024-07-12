@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import React, { lazy, Suspense, useState } from 'react';
 import About from "./components/About";
+import Apps from "./components/Apps";
 import Gallery from "./components/Gallery";
 import Nav from "./components/Nav";
 import Loading from "./components/Loading";
@@ -24,6 +25,9 @@ import ZxraDustry from "./components/projects/ZxraDustry";
 import ZxraLib from "./components/projects/ZxraLib";
 import ZxraRest from "./components/projects/ZxraRest";
 
+// App Component
+import Fbdl from "./components/apps/Fbdl";
+
 const Home = lazy(() => import("./components/Home"))
 const Project = lazy(() => import("./components/Project"))
 
@@ -41,8 +45,11 @@ function App() {
             <Route index element={<Home/>} />
             <Route exact path="gallery" element={<Gallery/>} />
             <Route exact path="about" element={<About/>} />
+            <Route exact path="apps" element={<Apps/>} />
             <Route exact path="project" element={<Project/>} />
             <Route exact path="/" element={<Home/>} />
+
+            <Route exact path="apps/fbdl" element={<Fbdl/>} />
 
             <Route exact path="project/bzb-web" element={<BzbWeb/>} />
             <Route exact path="project/Chatlify" element={<Chatlify/>} />

@@ -41,6 +41,10 @@ const Nav = ({ nav, setNav }) => {
             <i className='bx bxs-home mr-1 text-[1.14rem]' style={{color:'#ffffff'}}  ></i>
             <div className="tooltip ml-1">Beranda</div>
         </Link>
+        <Link className="mb-1 flex items-center text-[1.06rem] truncate -ml-1 rounded lg:-ml-2 lg:hover:ml-0 px-2 py-[4px] bg-transparent hover:bg-navlogo transition-all ease-in-out duration-300" to="apps">
+          <i className='bx bxs-devices mr-1 text-[1.14rem]' style={{color:'#ffffff'}}  ></i>
+          <span className="tooltip ml-1">Apps</span>
+        </Link>
         <Link className="mb-1 flex items-center text-[1.06rem] truncate -ml-1 rounded lg:-ml-2 lg:hover:ml-0 px-2 py-[4px] bg-transparent hover:bg-navlogo transition-all ease-in-out duration-300" to="gallery">
           <i className='bx bxs-photo-album mr-1 text-[1.14rem]' style={{color:'#ffffff'}}  ></i>
           <span className="tooltip ml-1">Gallery</span>

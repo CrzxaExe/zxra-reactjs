@@ -32,14 +32,14 @@
     },
     {
       "name": "Zxra Rest",
-      "ver": "1.2.0",
+      "ver": "1.0.0",
       "act": true,
       "stats": {
         "lang": [ "javascript", "json" ],
         "app": "Restfull API"
       },
       "link": "ZxraRest",
-      "des": "Connected to your Zxra Client"
+      "des": "Connected to your Zxra API"
     },
     {
       "name": "Khyro Discord Bot",
@@ -157,6 +157,13 @@
       },
       "link": "ZxraDustry",
       "des": "Mod untuk game Mindustry, namun kami sudah jarang mengupdatenya. Ini hanya baru percobaan, mungkin nanti akan dilanjutkan"
+    }
+  ],
+  "apps": [
+    {
+      "name": "Fbdl",
+      "link": "fbdl",
+      "img": "https://z-p3-scontent.fsoc1-2.fna.fbcdn.net/v/t39.8562-6/419903227_1771882663255491_7530620370863632840_n.png?_nc_cat=101&ccb=1-7&_nc_sid=f537c7&_nc_ohc=8fCXi7S2FxcQ7kNvgERNM_p&_nc_ht=z-p3-scontent.fsoc1-2.fna&oh=00_AYBhaVqCxbCnx0Z733Wh7qxYIJFlmHp04GvFQMpOaBCIdg&oe=6695B261"
     }
   ]
 }

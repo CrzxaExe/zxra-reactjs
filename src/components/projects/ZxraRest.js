@@ -25,6 +25,15 @@ function ZxraRest() {
             <span className="block"><i className='bx bx-package mr-1 text-sm' style={{color:'#ffffff'}}  ></i> Versi {ver}</span>
             <span className="block bg-nav rounded px-2 py-1 whitespace-pre-wrap"><i className='bx bx-note mr-1 text-sm' style={{color:'#ffffff'}}  ></i><p className="pb-3">{des}</p></span>
           </p>
+
+          <TextLine name="Ingin Menggunakan juga?"/>
+
+          <div className="px-3 py-4">
+	    <p>
+    	      API ini tersedia secara publik dan tidak menggunakan limit, namun kami membatasi penerimaan banyak request karena alasan finansial lah.
+    	      Namun kami akan selalu meningkatkan performa API kami menjadi sebaik mungkin.<br/>
+            </p>
+	  </div>
         </div>
       </section>
 
