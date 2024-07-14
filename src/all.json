@@ -2,7 +2,7 @@
   "project": [
     {
       "name": "Better Zxra Bedrock",
-      "ver": "1.1.2r",
+      "ver": "1.2.5r-pre",
       "img": "https://raw.githubusercontent.com/CrzxaExe/CzWeb/main/img/heads.png",
       "act": true,
       "stats": {
@@ -11,6 +11,10 @@
         "content": [
           {
             "name": "Utama",
+            "link": "#"
+          },
+          {
+            "name": "Entity",
             "link": "#"
           },
           {
@@ -132,6 +136,7 @@
         "lang": [ "Dart" ],
         "app": "Flutter Ap"
       },
+      "link": "Xdzr",
       "des": "Idk, just created"
     },
     {

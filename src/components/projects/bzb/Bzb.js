@@ -3,6 +3,7 @@ import axios from 'axios';
 import TextLine from '../../TextLine';
 import PrKonten from '../PrKonten';
 import BzbMechanics from './BzbMechanics';
+import BzbMob from './BzbMob';
 import BzbQuest from './BzbQuest';
 import BzbUi from './BzbUi';
 import jsonData from '../../../all.json';
@@ -42,7 +43,7 @@ function Bzb() {
             <span className="block">{act ? (<i className='bx bxs-check-circle mr-1 text-sm' style={{color:'#ffffff'}}  > <span>Active</span></i>):(<i className='bx bxs-error-circle mr-1 text-sm' style={{color:'#ffffff'}}  > <span>Inactive</span></i>)}</span>
             <span className="block"><i className='bx bx-code-curly mr-1 text-sm' style={{color:'#ffffff'}}  ></i> {lang.map(e => e.charAt(0).toUpperCase() + e.slice(1)).join(", ")}</span>
             <span className="block"><i className='bx bx-package mr-1 text-sm' style={{color:'#ffffff'}}  ></i> Versi {ver}</span>
-            <span className="block bg-nav rounded px-2 py-1 whitespace-pre"><i className='bx bx-note mr-1 text-sm' style={{color:'#ffffff'}}  ></i><p className="pb-3">{des}</p></span>
+            <span className="block bg-nav rounded px-2 py-1 whitespace-pre-wrap"><i className='bx bx-note mr-1 text-sm' style={{color:'#ffffff'}}  ></i><p className="pb-3">{des}</p></span>
           </p>
 
           <TextLine name="Unduh"/>
@@ -71,8 +72,21 @@ function Bzb() {
             </table>
           </div>
 
+          <TextLine name="Bahasa"/>
+
+          <p className="pl-3 text-xs whitespace-pre-wrap text-justify">
+            Bahasa yang tersedia saat ini hanya 2 saja. Meskipun sedikit, kami menerjemahkan semua hal mulai dari ui,
+            item, entity, mekanik dan lainnya yang ada. Tetapi semua bahasa yang ada, belum tentu benar. Berikut bahasa yang didukung:
+            <ul className="pt-3 pb-2 pl-3 list-disc">
+              <li>Bahasa Indonesia</li>
+              <li>Bahasa Inggris(US)</li>
+            </ul>
+            Bahasa akan selalu kami update mengikuti zaman.
+          </p>
+
           <TextLine name="Fitur"/>
 
+          <BzbMob/>
           <BzbMechanics/>
           <BzbQuest/>
           <BzbUi/>

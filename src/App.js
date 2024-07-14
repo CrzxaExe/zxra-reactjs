@@ -21,6 +21,7 @@ import CzPortofolio from "./components/projects/CzPortofolio";
 import KhyroDc from "./components/projects/KhyroDc";
 import KhyroWa from "./components/projects/KhyroWa";
 import Mkx from "./components/projects/Mkx";
+import Xdzr from "./components/projects/Xdzr";
 import ZxraDustry from "./components/projects/ZxraDustry";
 import ZxraLib from "./components/projects/ZxraLib";
 import ZxraRest from "./components/projects/ZxraRest";
@@ -58,6 +59,7 @@ function App() {
             <Route exact path="project/khyro-dc" element={<KhyroDc/>} />
             <Route exact path="project/khyro-wa" element={<KhyroWa/>} />
             <Route exact path="project/mkx" element={<Mkx/>} />
+            <Route exact path="project/xdzr" element={<Xdzr/>} />
             <Route exact path="project/ZxraDustry" element={<ZxraDustry/>} />
             <Route exact path="project/ZxraLib" element={<ZxraLib/>} />
             <Route exact path="project/ZxraRest" element={<ZxraRest/>} />
