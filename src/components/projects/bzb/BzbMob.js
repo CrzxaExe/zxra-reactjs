@@ -12,7 +12,7 @@ const BzbMob = ({ full }) => {
       </b>
 
       <p className="text-xs lg:text-sm px-3 py-1 pb-3 w-full whitespace-pre-wrap text-justify">
-        
+        Kami buatkan sedikit entity yang akan menemani survival kalian. 
         {!full ? (<> Selengkapnya ada <Link className="text-tsec underline" to='entity'>disini</Link>. </>) : ""}
       </p>
     </div>
