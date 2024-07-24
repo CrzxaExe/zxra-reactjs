@@ -4,18 +4,23 @@
 
 @layer base {
   @font-face {
-    font-family: 'Valorant';
+    font-family: "Valorant";
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: url(./fonts/VALORANT-Regular.woff2) format('woff2');
+    src: url(./fonts/VALORANT-Regular.woff2) format("woff2");
   }
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   user-select: none;
   @apply bg-prime text-tprime scroll-smooth;
+}
+
+::-webkit-scrollbar-track {
+  background: #00000000;
+  border-radius: 5px;
 }
 
 .cz-line {
@@ -34,7 +39,7 @@ body {
 }
 
 .cz-top {
-  transition: background .8s ease-in-out;
+  transition: background 0.8s ease-in-out;
   z-index: 2;
   -webkit-backdrop-filter: blur(2px);
   backdrop-filter: blur(2px);
@@ -45,7 +50,7 @@ body {
 }
 
 .cz-project-img {
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .cz-white {
