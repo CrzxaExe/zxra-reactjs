@@ -20,7 +20,7 @@ body {
 
 ::-webkit-scrollbar-track {
   background: #00000000;
-  border-radius: 5px;
+  width: 0;
 }
 
 .cz-line {

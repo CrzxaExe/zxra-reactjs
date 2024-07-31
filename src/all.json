@@ -6,7 +6,7 @@
       "img": "https://raw.githubusercontent.com/CrzxaExe/CzWeb/main/img/heads.png",
       "act": true,
       "stats": {
-        "lang": [ "javascript", "json" ],
+        "lang": ["javascript", "json"],
         "app": "Minecraft Addon",
         "content": [
           {
@@ -14,8 +14,12 @@
             "link": "#"
           },
           {
+            "name": "Dunia",
+            "link": "world"
+          },
+          {
             "name": "Entity",
-            "link": "#"
+            "link": "entity"
           },
           {
             "name": "Mekanik",
@@ -24,6 +28,10 @@
           {
             "name": "Misi",
             "link": "quest"
+          },
+          {
+            "name": "Pemberitahuan",
+            "link": "#notify"
           },
           {
             "name": "Tampilan",
@@ -36,10 +44,10 @@
     },
     {
       "name": "Zxra Rest",
-      "ver": "1.0.0",
+      "ver": "1.0.1",
       "act": true,
       "stats": {
-        "lang": [ "javascript", "json" ],
+        "lang": ["javascript", "json"],
         "app": "Restfull API"
       },
       "link": "ZxraRest",
@@ -51,7 +59,7 @@
       "img": "https://raw.githubusercontent.com/CrzxaExe/CrzxaExe/main/asset/Logo_Khyro.png",
       "act": false,
       "stats": {
-        "lang": [ "javascript" ],
+        "lang": ["javascript"],
         "app": "Discord Bot"
       },
       "link": "khyro-dc",
@@ -63,7 +71,7 @@
       "img": "https://raw.githubusercontent.com/CrzxaExe/CrzxaExe/main/asset/Logo_Khyro.png",
       "act": false,
       "stats": {
-        "lang": [ "javascript" ],
+        "lang": ["javascript"],
         "app": "Whatsapp Bot"
       },
       "link": "khyro-wa",
@@ -75,7 +83,7 @@
       "img": "https://raw.githubusercontent.com/CrzxaExe/Zxra-web/master/img/bzb.png",
       "act": true,
       "stats": {
-        "lang": [ "html","CSS","JS" ],
+        "lang": ["html", "CSS", "JS"],
         "app": "Static Website",
         "content": []
       },
@@ -88,7 +96,7 @@
       "img": "https://raw.githubusercontent.com/CrzxaExe/CrzxaExe/main/asset/Logo%20(1).png",
       "act": false,
       "stats": {
-        "lang": [ "html","CSS","JS" ],
+        "lang": ["html", "CSS", "JS"],
         "app": "Static Website"
       },
       "link": "cz-portofolio",
@@ -99,7 +107,7 @@
       "ver": "1.0.8",
       "act": false,
       "stats": {
-        "lang": [ "javascript" ],
+        "lang": ["javascript"],
         "app": "Crud"
       },
       "link": "cz-db",
@@ -110,7 +118,7 @@
       "ver": "1.4.0",
       "act": false,
       "stats": {
-        "lang": [ "javascript" ],
+        "lang": ["javascript"],
         "app": "Full Stack App"
       },
       "link": "Chatlify",
@@ -122,7 +130,7 @@
       "img": "https://avatars.githubusercontent.com/u/78332709?s=400&u=4aa87c566a5fb68af00b3f830e39200dcfee5529&v=4",
       "act": true,
       "stats": {
-        "lang": [ "javascript" ],
+        "lang": ["javascript"],
         "app": "Minecraft Module Pkg"
       },
       "link": "ZxraLib",
@@ -133,7 +141,7 @@
       "ver": "1.0.0",
       "act": false,
       "stats": {
-        "lang": [ "Dart" ],
+        "lang": ["Dart"],
         "app": "Flutter Ap"
       },
       "link": "Xdzr",
@@ -145,7 +153,7 @@
       "img": "https://cdn.discordapp.com/avatars/992661371923746888/c2a964bb36b1273e8acda8ee293f5f0f.webp?size=4096",
       "act": true,
       "stats": {
-        "lang": [ "javascript" ],
+        "lang": ["javascript"],
         "app": "Discord & Whatsapp Bot"
       },
       "link": "mkx",
@@ -157,10 +165,11 @@
       "img": "https://raw.githubusercontent.com/CrzxaExe/ZxraDustry/main/icon.png",
       "act": false,
       "stats": {
-        "lang": [ "json" ],
+        "lang": ["json"],
         "app": "Mindustry Mod"
       },
       "link": "ZxraDustry",
+      "hide": true,
       "des": "Mod untuk game Mindustry, namun kami sudah jarang mengupdatenya. Ini hanya baru percobaan, mungkin nanti akan dilanjutkan"
     }
   ],

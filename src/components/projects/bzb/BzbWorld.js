@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const BzbMob = ({ full }) => {
+const BzbWorld = ({ full }) => {
   return (
     <div className="pb-2 mt-2">
       {full ? (
@@ -16,20 +16,18 @@ const BzbMob = ({ full }) => {
       )}
 
       <b className="text-xl lg:text-2xl text-tsec block">
-        {full ? "BZB | Entity" : "Entity"}
+        {full ? "BZB | Dunia (World)" : "Dunia / World"}
       </b>
 
       <p className="text-xs lg:text-sm px-3 py-1 pb-3 w-full whitespace-pre-wrap text-justify">
-        Kami buatkan sedikit entity yang akan menemani survival kalian. <br />
-        Semua mob vanilla juga kami rombak semuanya dan kami naikan pula
-        difficulty tiap mob. <br />
-        Vanilla mob memilki ablity yang unik yang akan membuat gameplay lebih
-        bervariasi.
+        Proses pembuatan dunia Minecraft kami tingkatkan mulai dari bioma,
+        struktur dan lainnya sudah kami update sedikit untuk meningkatkan
+        kualitas bermain kamu.
         {!full ? (
           <>
             {" "}
             Selengkapnya ada{" "}
-            <Link className="text-tsec underline" to="entity">
+            <Link className="text-tsec underline" to="world">
               disini
             </Link>
             .{" "}
@@ -42,4 +40,4 @@ const BzbMob = ({ full }) => {
   );
 };
 
-export default BzbMob;
+export default BzbWorld;
