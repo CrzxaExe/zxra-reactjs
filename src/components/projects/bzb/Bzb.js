@@ -11,7 +11,7 @@ import BzbWorld from "./BzbWorld";
 import jsonData from "../../../all.json";
 
 function Bzb() {
-  const [ktn, setKtn] = useState(false);
+  // const [ktn, setKtn] = useState(false);
   const {
     img,
     act,
@@ -50,7 +50,7 @@ function Bzb() {
         id="home"
         className="w-full py-2 flex flex-wrap flex-row-reverse -mt-2 text-sm h-[94%] overflow-y-hidden"
       >
-        <PrKonten content={content} open={ktn} openFunc={setKtn} />
+        <PrKonten content={content} /**/ />
 
         <div className="w-full lg:w-[78.5%] lg:h-full overflow-scroll pb-[10vw]">
           <img
