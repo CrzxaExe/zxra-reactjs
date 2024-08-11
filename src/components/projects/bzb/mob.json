@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Elite Evoker",
+    "health": 108,
+    "movespeed": 0.53,
+    "family": ["evocation_illager", "monster", "illager", "mob"],
+    "vanilla": false,
+    "spawnable": true,
+    "natural": false,
+    "spawnTrigger": ["Penyerbuan"],
+    "ability": "Evoker yang diperkuat",
+    "skill": ["Memiliki semua skill dari evoker normal"]
+  },
+  {
+    "name": "Yuri",
+    "health": 500,
+    "movespeed": 0.21,
+    "family": ["yuri", "zxra", "cat", "npc"],
+    "vanilla": false,
+    "spawnable": false,
+    "natural": false,
+    "spawnTrigger": ["Command only"],
+    "ability": "Pasif regeneration",
+    "skill": []
+  }
+]

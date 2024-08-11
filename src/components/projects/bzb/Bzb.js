@@ -200,7 +200,12 @@ function Bzb() {
             • Rahmad
             <br />
             • Omen (FB)
-            <br />
+            <br /> <br />
+            Yang telah meluangkan waktu untuk membantu dalam development addon
+            ini. Kami akan lebih memperhatikan lagi tentang apa yang dibutuhkan
+            oleh addon ini. Kami selalu membuka saran untuk semua orang. Jika
+            ada yang ingin disampaikan atau ada saran, bisa langsung kirim saran
+            anda ke sosial media kami.
           </p>
         </div>
       </section>

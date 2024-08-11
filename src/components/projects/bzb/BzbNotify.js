@@ -20,7 +20,7 @@ const BzbNotify = ({ full }) => {
       </b>
 
       <p className="text-xs lg:text-sm px-3 py-1 pb-3 w-full whitespace-pre-wrap text-justify">
-        Fitur ini menghadirkan pesan unutk pemberitahuan tentang suatu peristiwa
+        Fitur ini menghadirkan pesan untuk pemberitahuan tentang suatu peristiwa
         tertentu seperti perubahan cuaca, lokasi kematian pemain dan lain
         sebagainya
       </p>

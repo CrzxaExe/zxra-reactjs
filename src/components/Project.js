@@ -52,7 +52,7 @@ const ProjectList = ({ name, lang, app, ver, act, des, img, link, hide }) => {
   return hide !== true ? (
     <Link
       to={link ? link : "#"}
-      className="z-[0] cz-transition bg-navLogo aspect-square rounded relative z-0"
+      className="z-0 cz-transition bg-navLogo aspect-square rounded relative"
     >
       {img ? (
         <img
@@ -64,7 +64,7 @@ const ProjectList = ({ name, lang, app, ver, act, des, img, link, hide }) => {
       ) : (
         <div className="bg-nav w-full aspect-square"></div>
       )}
-      <div className="absolute top-0 px-2 py-3 font-bold text-[0.6rem] lg:text-[0.72rem] font-['valorant'] -tracking-[0.06rem] text-white block">
+      <div className="absolute top-0 px-2 py-3 font-bold text-[0.6rem] lg:text-[0.72rem] font-['valorant'] -tracking-[0.04rem] text-white block">
         <b className="py-1 px-2 bg-nav rounded">{name}</b>
         <span className="block ml-1">
           {act ? (
