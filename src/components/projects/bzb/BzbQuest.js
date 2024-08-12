@@ -25,10 +25,14 @@ const BzbQuest = ({ full }) => {
         satu ini. Dengan ini kalian bisa mencari uang untuk membeli sesuatu
         ataupun yang lain. Misi yang didapatkan beragam tipe, hadiah dan
         persyaratan.
+        <br />
+        <br />
+        Dengan fitur perserikatan, pemain akan mendapatkan lebih banyak uang
+        sebesar 20%.
         {!full ? (
           <>
             {" "}
-            Dokumentasi dari fitur misi ada{" "}
+            Semua dokumentasi dari fitur misi ada{" "}
             <Link className="text-tsec underline" to="quest">
               disini
             </Link>

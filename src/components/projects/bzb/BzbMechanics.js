@@ -27,7 +27,9 @@ const BzbMechanics = ({ full }) => {
         Bosen dengan mekanik original Minecraftnya? Kami menambahkan beberapa
         mekanik baru yang mungkin akan kalian inginkan didalam Minecraft, namun
         fitur ini masih belum stabil dan akan selalu di update untuk mengurangi
-        bug yang ada di mekanik-mekanik tersebut.
+        bug yang ada di mekanik-mekanik tersebut. Fitur ini termasuk penting
+        dalam addon ini, jadi jangan sampai diabaikan karena akan sangat
+        berpengaruh terhadap gameplaymu
         {!full ? (
           <>
             {" "}

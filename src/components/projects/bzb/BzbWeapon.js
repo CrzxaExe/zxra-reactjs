@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const BzbNotify = ({ full }) => {
+const BzbTem = ({ full }) => {
   return (
-    <div className="pb-2 mt-2" id="notify">
+    <div className="pb-2 mt-2">
       {full ? (
         <Link
           className="px-2 py-1 bg-nav rounded mt-[2.5rem] mb-5 inline-block"
@@ -16,16 +16,25 @@ const BzbNotify = ({ full }) => {
       )}
 
       <b className="text-xl lg:text-2xl text-tsec block">
-        Pemberitahuan / Notify
+        {full ? "BZB | Senjata / Weapon" : "Senjata / Weapon"}
       </b>
 
       <p className="text-xs lg:text-sm px-3 py-1 pb-3 w-full whitespace-pre-wrap text-justify">
-        Fitur ini menghadirkan pesan untuk pemberitahuan tentang suatu peristiwa
-        tertentu seperti perubahan cuaca, lokasi kematian pemain dan lain
-        sebagainya semuanya sudah satu paket dalam addon ini
+        {!full ? (
+          <>
+            {" "}
+            Selengkapnya ada{" "}
+            <Link className="text-tsec underline" to="ui">
+              disini
+            </Link>
+            .{" "}
+          </>
+        ) : (
+          ""
+        )}
       </p>
     </div>
   );
 };
 
-export default BzbNotify;
+export default BzbTem;

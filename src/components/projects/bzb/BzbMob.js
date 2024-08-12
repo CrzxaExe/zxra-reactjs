@@ -28,7 +28,7 @@ const BzbMob = ({ full }) => {
         {!full ? (
           <>
             {" "}
-            Selengkapnya ada{" "}
+            Selengkapnya tentang mob baru ataupun vanilla bisa klik{" "}
             <Link className="text-tsec underline" to="entity">
               disini
             </Link>
@@ -59,10 +59,15 @@ const BzbMob = ({ full }) => {
               .sort((a, b) => a.name.localeCompare(b.name))
               .map((e) => {
                 return (
-                  <div className="bg-nav px-3 py-2 pt-1 rounded mb-2">
+                  <div className="bg-nav px-3 py-2 pt-1 rounded mb-4">
                     <b className="text-tsec text-sm lg:text-lg">{e.name}</b>
                     <p className="text-xs whitespace-pre-wrap font-mono">
-                      {`Tipe mob       : ${e.family
+                      {`ID             : ${
+                        !e.vanilla
+                          ? "cz:" + e.name.toLowerCase().replace(" ", "_")
+                          : "minecraft:" +
+                            e.name.toLowerCase().replace(" ", "_")
+                      }\nTipe mob       : ${e.family
                         .map((r) =>
                           r
                             .split("_")
@@ -81,9 +86,9 @@ const BzbMob = ({ full }) => {
                         e.natural ? "Iya" : "Tidak"
                       }\nKondisi Spawn  : ${e.spawnTrigger
                         .map((r) => r.charAt(0).toUpperCase() + r.slice(1))
-                        .join(", ")}\n\nKemampuan      : ${
+                        .join(", ")}\n\nKemampuan      :\n${
                         e.ability ? e.ability : "Tidak Ada"
-                      }\nKeahlian(Skill):\n${
+                      }\n\nKeahlian(Skill):\n${
                         e.skill.length > 0
                           ? e.skill.map((d) => "* " + d).join("\n")
                           : "Tidak Ada"

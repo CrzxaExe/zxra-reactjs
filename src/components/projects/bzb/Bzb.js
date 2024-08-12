@@ -2,11 +2,13 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import TextLine from "../../TextLine";
 import PrKonten from "../PrKonten";
+import BzbGuild from "./BzbGuild";
 import BzbMechanics from "./BzbMechanics";
 import BzbMob from "./BzbMob";
 import BzbNotify from "./BzbNotify";
 import BzbQuest from "./BzbQuest";
 import BzbUi from "./BzbUi";
+import BzbWeapon from "./BzbWeapon";
 import BzbWorld from "./BzbWorld";
 import jsonData from "../../../all.json";
 
@@ -176,6 +178,8 @@ function Bzb() {
           <BzbMechanics />
           <BzbQuest />
           <BzbNotify />
+          <BzbGuild />
+          <BzbWeapon />
           <BzbUi />
 
           <TextLine name="Tentang" />

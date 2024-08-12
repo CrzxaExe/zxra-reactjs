@@ -10,10 +10,12 @@ import TopBar from "./components/TopBar";
 // Project Components
 // BZB
 import Bzb from "./components/projects/bzb/Bzb";
+import BzbGuild from "./components/projects/bzb/BzbGuild";
 import BzbMechanics from "./components/projects/bzb/BzbMechanics";
 import BzbMob from "./components/projects/bzb/BzbMob";
 import BzbUi from "./components/projects/bzb/BzbUi";
 import BzbQuest from "./components/projects/bzb/BzbQuest";
+import BzbWeapon from "./components/projects/bzb/BzbWeapon";
 import BzbWorld from "./components/projects/bzb/BzbWorld";
 
 import BzbWeb from "./components/projects/BzbWeb";
@@ -76,13 +78,18 @@ function App() {
             <Route exact path="project/bzb/" element={<Bzb />} />
             <Route
               exact
-              path="project/bzb/mechanics"
-              element={<BzbMechanics full={true} />}
+              path="project/bzb/entity"
+              element={<BzbMob full={true} />}
             />
             <Route
               exact
-              path="project/bzb/entity"
-              element={<BzbMob full={true} />}
+              path="project/bzb/guild"
+              element={<BzbGuild full={true} />}
+            />
+            <Route
+              exact
+              path="project/bzb/mechanics"
+              element={<BzbMechanics full={true} />}
             />
             <Route
               exact
@@ -93,6 +100,11 @@ function App() {
               exact
               path="project/bzb/quest"
               element={<BzbQuest full={true} />}
+            />
+            <Route
+              exact
+              path="project/bzb/weapon"
+              element={<BzbWeapon full={true} />}
             />
             <Route
               exact

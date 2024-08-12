@@ -34,6 +34,14 @@
             "link": "#notify"
           },
           {
+            "name": "Perserikatan",
+            "link": "guild"
+          },
+          {
+            "name": "Senjata",
+            "link": "weapon"
+          },
+          {
             "name": "Tampilan",
             "link": "ui"
           }

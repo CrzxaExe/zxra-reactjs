@@ -26,7 +26,8 @@ const BzbWorld = ({ full }) => {
         {!full ? (
           <>
             {" "}
-            Selengkapnya ada{" "}
+            Selengkapnya serta penjelasan tentang pembuatan dunia(World
+            Generation), bisa klik{" "}
             <Link className="text-tsec underline" to="world">
               disini
             </Link>

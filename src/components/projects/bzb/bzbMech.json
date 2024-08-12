@@ -153,5 +153,14 @@
 
       "source/import { Entity } from 'system.js';\n\nexport class Specialist extends Entity {\n  ..\n  dirtyness() {\n    return new Dirty(this.plyer);\n  };\n  ..\n}"
     ]
+  },
+  {
+    "name": "Status",
+    "id": "status",
+    "ctn": [
+      "Mekanik ini sangat mirip dengan efek(effect) di dalan minecraft, namun ini bisa lebih di kostumisasi dan juga sudah support dengan fitur Pihak Ketiga(3rd Party). Walaupun mirip dengan fitur effect di Minecraft, namun penggunaan mekanik ini dapat lebih luas dan bukan hanya sekedar buff efek tertentu melainkan bisa saja kunci dari mekanik yang lain yang terdapat dalam addon ini",
+
+      "Ini dapat berefek ke dalam gameplay serta mekanik penting dari addon ini"
+    ]
   }
 ]

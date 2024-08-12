@@ -22,5 +22,17 @@
     "spawnTrigger": ["Command only"],
     "ability": "Pasif regeneration",
     "skill": []
+  },
+  {
+    "name": "Drowned",
+    "health": 80,
+    "movespeed": 0.23,
+    "family": ["drowned", "mob", "monster", "undead", "zombie"],
+    "vanilla": true,
+    "spawnable": true,
+    "natural": true,
+    "spawnTrigger": ["Didalam air dengan cahaya yang sedikit"],
+    "ability": "Disaat mob ini berada di dalam air atau hujan, mob ini akan mendapatkan pengurangan damage sebesar 50% dan efek regenerasi",
+    "skill": []
   }
 ]

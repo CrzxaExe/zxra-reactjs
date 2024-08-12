@@ -32,7 +32,7 @@ const BzbUi = ({ full }) => {
         {!full ? (
           <>
             {" "}
-            Selengkapnya ada{" "}
+            Selengkapnya tentang tampilan Minecraft bisa klik{" "}
             <Link className="text-tsec underline" to="ui">
               disini
             </Link>
@@ -127,6 +127,12 @@ const BzbUi = ({ full }) => {
             className="w-full pt-1 pb-4 rounded"
             alt="Statistik"
           />
+
+          <p className="text-xs lg:text-sm px-3 py-1 pb-3 w-full whitespace-pre-wrap text-justify">
+            Server form ui memiliki beberapa variasi, variasi tersebut dapat
+            digunakan jika key dari judul server form sama dengan key dari
+            templatemya
+          </p>
         </>
       ) : (
         ""
