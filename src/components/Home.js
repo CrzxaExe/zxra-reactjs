@@ -90,6 +90,14 @@ function Home() {
             beragam project yang telah dikeluarkan. Namun kami memiliki banyak
             kekurangan seperti terlalu malas untuk up project dan lain
             sebagainya.
+            {/*<iframe
+              src="https://discord.com/widget?id=1278365565819293756&theme=dark"
+              width="320"
+              height="500"
+              allowtransparency="true"
+              frameborder="0"
+              sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
+            ></iframe>*/}
           </p>
         </div>
 

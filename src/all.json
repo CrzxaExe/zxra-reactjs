@@ -48,11 +48,11 @@
         ]
       },
       "link": "bzb",
-      "des": "Lets Enchant your journey with this addon\nAdds many features and new mechanics which such as RPG game\nDifficulty the game has been increased, such as a mob has unique ability,\nnew mechanics and many more"
+      "des": "Lets Enchant your journey with this addon\nAdds many features and new mechanics which such as RPG game\nDifficulty the game has been increased, such as a mob has unique ability, new mechanics and many more"
     },
     {
       "name": "Zxra Rest",
-      "ver": "1.0.1",
+      "ver": "1.0.2",
       "act": true,
       "stats": {
         "lang": ["javascript", "json"],
@@ -96,6 +96,7 @@
         "content": []
       },
       "link": "bzb-web",
+      "hide": true,
       "des": "Website sederhana dari Better Zxra Bedrock yang sekarang sudah berpindah ke sini. Di dalam project website tersebut sudah menggunakan Tailwind untuk styling pagenya, namun hanya menggunakan CDN saja."
     },
     {
@@ -119,6 +120,7 @@
         "app": "Crud"
       },
       "link": "cz-db",
+      "hide": true,
       "des": "Database buatan CrzxaExe"
     },
     {

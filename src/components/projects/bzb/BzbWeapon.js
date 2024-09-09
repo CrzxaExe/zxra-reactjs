@@ -20,11 +20,32 @@ const BzbTem = ({ full }) => {
       </b>
 
       <p className="text-xs lg:text-sm px-3 py-1 pb-3 w-full whitespace-pre-wrap text-justify">
+        Senjata didalam sini memiliki beberapa jenis dan juga raritynya
+        masing-masing. Jenis senjata ada 2 yaitu normal dan Spesial.
+        <br />
+        <br />
+        Senjata Normal berarti seperti senjata pada umumnya dan tidak memliki
+        efek khusus.
+        <br />
+        <br />
+        Senjata Spesial memiliki efek khusus disetiap senjata, mulai dari pasif,
+        tipe, rarity dan skill senjata.
+        <br />
+        Rare &nbsp; &nbsp; : Tipe + Skill
+        <br />
+        Legend: Tipe + Pasif + 2 Skill
+        <br />
+        Epic &nbsp; &nbsp; : Tipe + Pasif + 3 Skill
+        <br />
+        Unique: Tipe + 2 Pasif + 4 Skill
+        <br />
+        Limited: Tipe + 2 Pasif + 4 Skill.
+        <br />
         {!full ? (
           <>
             {" "}
             Selengkapnya ada{" "}
-            <Link className="text-tsec underline" to="ui">
+            <Link className="text-tsec underline" to="weapon">
               disini
             </Link>
             .{" "}

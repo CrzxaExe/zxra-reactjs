@@ -1,6 +1,8 @@
 import React from "react";
 import TextLine from "../TextLine";
 import jsonData from "../../all.json";
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { coy } from "react-syntax-highlighter/dist/esm/styles/prism";
 
 function ZxraRest() {
   const {
@@ -9,6 +11,53 @@ function ZxraRest() {
     ver,
     stats: { app, lang },
   } = jsonData.project.find((e) => e.name === "Zxra Rest");
+
+  const endpoint1 = [
+    {
+      name: "cats",
+      method: "get",
+      req: [],
+    },
+    {
+      name: "khodam",
+      method: "get",
+      req: [],
+    },
+    {
+      name: "fbdl",
+      method: "post",
+      req: [
+        {
+          name: "link",
+          type: "string",
+        },
+      ],
+    },
+    {
+      name: "gemini",
+      method: "post",
+      req: [
+        {
+          name: "prompt",
+          type: "string",
+        },
+      ],
+    },
+    {
+      name: "performance",
+      method: "get",
+      req: [],
+    },
+  ];
+
+  const output = `// Output
+
+{
+  "title": "Zxra Rest",
+  "version": "VERSION",
+  "endpoint": "ENDPOINT",
+  "result": {}
+}`;
 
   return (
     <div className="mt-[2.25rem] lg:mt-[1.6rem] -z-1 lg:h-[93vh] -mb-[6rem]">
@@ -92,21 +141,57 @@ function ZxraRest() {
               <br />
               Silahkan gunakan API kecil kami dengan gratis tanpa memerlukan
               Apikey
+              <br />
               <a
                 href="https://zxra-rest.vercel.app/"
-                className="text-tsec block"
+                className="text-tsec block my-2"
               >
                 https://zxra-rest.vercel.app/
               </a>
+              Kami juga sedang mengembangkan untuk versi keduanya namun yang
+              berbeda yaitu versi ini kami menggunakan library yang bernama
+              Elysia.js
             </p>
 
-            <TextLine name="Endpoint" />
+            <SyntaxHighlighter
+              showLineNumbers={true}
+              className="rounded mt-2 font-xs"
+              language="json"
+              customStyle={{ backgroundColor: "#44403c" }}
+              style={coy}
+            >
+              {output}
+            </SyntaxHighlighter>
+
+            <TextLine name="Endpoint v1 " />
             <ul className="list-disc pl-3">
-              <li>cats</li>
-              <li>fbdl</li>
-              <li>gemini</li>
-              <li>khodam</li>
-              <li>performance</li>
+              {endpoint1
+                .sort((a, b) => a.name.localeCompare(b.name))
+                .map((e, i) => {
+                  return (
+                    <li className="mb-2 p-2 rounded bg-darkprime/[0.4]" key={i}>
+                      <b>{e.name}</b>
+                      <span className="block mt-1">
+                        Method {e.method.toUpperCase()}
+                      </span>
+                      {e.req.length >= 1 ? (
+                        <p className="block">
+                          Require:
+                          <br />
+                          {e.req.map((r) => {
+                            return (
+                              <span className="block pl-2">
+                                {r.name} {r.type}
+                              </span>
+                            );
+                          })}
+                        </p>
+                      ) : (
+                        ""
+                      )}
+                    </li>
+                  );
+                })}
             </ul>
           </div>
         </div>
