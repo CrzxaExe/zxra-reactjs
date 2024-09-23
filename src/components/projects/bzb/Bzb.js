@@ -119,8 +119,8 @@ function Bzb() {
 
           <div className="text-xs lg:text-sm px-2 lg:px-7 w-full">
             <span>Versi yang tersedia, klik untuk menuju link download</span>
-            <table className="table-fixed w-full rounded">
-              <thead className="text-sm lg:text-base bg-navlogo mt-9">
+            <table className="table-fixed w-full rounded-sm mt-3">
+              <thead className="text-sm lg:text-base bg-navlogo mt-9 font-mono">
                 <tr>
                   <th className="px-3 py-2 tracking-wide text-left">Nama</th>
                   <th className="px-3 py-2 tracking-wide text-left">Versi</th>
@@ -147,7 +147,11 @@ function Bzb() {
                       {e.mc}
                     </th>
                     <th className="px-3 py-2 tracking-wide text-center">
-                      <a className="text-active underline" href={e.link}>
+                      <a
+                        target="blank"
+                        className="text-active underline"
+                        href={e.link}
+                      >
                         Link
                       </a>
                     </th>

@@ -16,14 +16,14 @@ function Project() {
         <div className="font-bold text-xl lg:text-2xl mr-3 text-tsec">
           Project
         </div>
-        <div className="before:content-['>'] lg:before:content-[''] before:mr-2 lg:before:mr-0 before:text-xl -mt-2 text-tter">
+        <div className="before:content-['|'] lg:before:content-[''] before:mr-2 lg:before:mr-0 before:text-xl -mt-2 text-tter">
           Daftar project kami
         </div>
       </header>
 
       <section
         id="in"
-        className="w-full py-2 grid grid-cols-3 lg:grid-cols-5 gap-2 grid-floa-dense mt-2"
+        className="w-full py-2 grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2 grid-floa-dense mt-2"
       >
         {data
           .sort((a, b) => a.name.localeCompare(b.name))
@@ -57,14 +57,14 @@ const ProjectList = ({ name, lang, app, ver, act, des, img, link, hide }) => {
       {img ? (
         <img
           loading="lazy"
-          className="transition-all duration-300 ease-in-out object-cover hover:opacity-[0.5] aspect-square rounded"
+          className="transition-all duration-300 ease-in-out object-cover hover:opacity-[0.4] aspect-square rounded"
           src={img}
           alt={name}
         />
       ) : (
-        <div className="bg-nav w-full aspect-square"></div>
+        <div className="transition-all duration-300 ease-in-out bg-nav w-full aspect-square hover:opacity-[0.4]"></div>
       )}
-      <div className="absolute top-0 px-2 py-3 font-bold text-[0.6rem] lg:text-[0.72rem] font-['valorant'] -tracking-[0.04rem] text-white block">
+      <div className="absolute top-0 px-2 py-3 font-bold text-[0.58rem] lg:text-[0.7rem] font-['valorant'] -tracking-[0.04rem] text-white block">
         <b className="py-1 px-2 bg-nav rounded">{name}</b>
         <span className="block ml-1">
           {act ? (
@@ -86,7 +86,7 @@ const ProjectList = ({ name, lang, app, ver, act, des, img, link, hide }) => {
           )}
         </span>
       </div>
-      <div className="absolute bottom-0 px-2 py-1 text-[0.5rem] lg:text-[0.58rem]">
+      <div className="absolute bottom-0 px-2 py-1 text-[0.5rem] lg:text-[0.58rem] z-0">
         <span className="font-mono rounded bg-nav px-1">v{ver}</span>
         <br />
         <div className="hidden lg:inline-flex items-center rounded bg-nav px-1 mb-[0.1rem]">

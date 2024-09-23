@@ -67,7 +67,7 @@ const BzbMob = ({ full }) => {
                           ? "cz:" + e.name.toLowerCase().replace(" ", "_")
                           : "minecraft:" +
                             e.name.toLowerCase().replace(" ", "_")
-                      }\nTipe mob       : ${e.family
+                      }\nTag mob        : ${e.family
                         .map((r) =>
                           r
                             .split("_")
@@ -80,6 +80,8 @@ const BzbMob = ({ full }) => {
                         e.movespeed
                       } Blok/detik\n\nOriginal       : ${
                         e.vanilla ? "Vanilla" : "Addon"
+                      }\nTerbang        : ${
+                        e.fly ? "Iya" : "Tidak"
                       }\nTelur Spawn    : ${
                         e.spawnable ? "Iya" : "Tidak"
                       }\nMuncul natural : ${

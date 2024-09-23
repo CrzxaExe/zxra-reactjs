@@ -24,11 +24,12 @@ const BzbQuest = ({ full }) => {
         Sebagai addon genre RPG, tak lupa kita menambahkan fitur krusial yang
         satu ini. Dengan ini kalian bisa mencari uang untuk membeli sesuatu
         ataupun yang lain. Misi yang didapatkan beragam tipe, hadiah dan
-        persyaratan.
+        persyaratan. Saat ini baru tersedia {jsonData.length} misi.
         <br />
         <br />
         Dengan fitur perserikatan, pemain akan mendapatkan lebih banyak uang
-        sebesar 20%.
+        sebesar 20% dan sekaligus mendapatkan xp dan juga token sebagai currency
+        baru untuk perserikatan. XP dari misi akan masuk ke dalam perserikatan
         {!full ? (
           <>
             {" "}
@@ -57,15 +58,13 @@ const BzbQuest = ({ full }) => {
       )}
 
       {full ? (
-        <div className="pb-4 px-3 text-sm whitespace-pre-wrap">
+        <div className="pb-4 px-3 text-sm whitespace-pre-wrap flex flex-wrap justify-between">
           {jsonData
             .sort((a, b) => a.rep - b.rep)
             .map((e, i) => {
               return (
-                <div className="pb-4">
-                  <b className="text-base text-tsec">
-                    {i + 1}. {e.name}
-                  </b>
+                <div className="pb-4 bg-darkprime/[0.7] rounded mb-1 w-full lg:w-[49.5%] py-2 px-3">
+                  <b className="text-base text-tsec">{e.name}</b>
                   <p className="pl-4">
                     {e.des}
                     <br />

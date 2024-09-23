@@ -30,17 +30,6 @@ const BzbTem = ({ full }) => {
         <br />
         Senjata Spesial memiliki efek khusus disetiap senjata, mulai dari pasif,
         tipe, rarity dan skill senjata.
-        <br />
-        Rare &nbsp; &nbsp; : Tipe + Skill
-        <br />
-        Legend: Tipe + Pasif + 2 Skill
-        <br />
-        Epic &nbsp; &nbsp; : Tipe + Pasif + 3 Skill
-        <br />
-        Unique: Tipe + 2 Pasif + 4 Skill
-        <br />
-        Limited: Tipe + 2 Pasif + 4 Skill.
-        <br />
         {!full ? (
           <>
             {" "}

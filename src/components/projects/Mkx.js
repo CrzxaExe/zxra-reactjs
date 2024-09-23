@@ -96,7 +96,7 @@ function Mkx() {
             membuka repo kami untuk publik.
             <a
               href="https://github.com/CrzxaExe/Mkx-Discord-Bot"
-              className="text-tsec text-xs block"
+              className="text-tsec text-xs block py-3"
             >
               https://github.com/CrzxaExe/Mkx-Discord-Bot
             </a>

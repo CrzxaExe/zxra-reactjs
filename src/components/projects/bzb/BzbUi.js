@@ -21,7 +21,7 @@ const BzbUi = ({ full }) => {
         {full ? "BZB | Tatap Muka / UI" : "Tatap Muka / UI"}
       </b>
 
-      <img alt="Gui" className="w-full py-4 rounded" src={imgGui} />
+      <img alt="Gui" className="w-full py-4 rounded px-2" src={imgGui} />
 
       <p className="text-xs lg:text-sm px-3 py-1 pb-3 w-full whitespace-pre-wrap text-justify">
         Kami menawarkan tampilan UI simpel dan minimalist. Disertai nuasa normal
@@ -124,7 +124,7 @@ const BzbUi = ({ full }) => {
           <b>Custom Form GUI</b>
           <img
             src={imgStats}
-            className="w-full pt-1 pb-4 rounded"
+            className="w-full pt-1 pb-4 px-2 rounded"
             alt="Statistik"
           />
 

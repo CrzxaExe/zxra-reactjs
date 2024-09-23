@@ -235,5 +235,22 @@
       { "type": "voxn", "amount": 2 },
       { "type": "token", "amount": 2 }
     ]
+  },
+  {
+    "name": "Mineral / Minerals",
+    "des": "Tambang beberapa Bijih Berlian, Bijih Besi dan Bijih Emas, mineral bersinar untuk meningkatkan perlengkapan kami",
+    "rep": 30,
+    "task": [
+      { "act": "hancurkan", "target": "diamond_ore", "amount": 128 },
+      { "act": "hancurkan", "target": "iron_ore", "amount": 128 },
+      { "act": "hancurkan", "target": "gold_ore", "amount": 128 }
+    ],
+    "reward": [
+      { "type": "cash", "amount": 242.2 },
+      { "type": "rep", "amount": 12 },
+      { "type": "voxn", "amount": 5 },
+      { "type": "item/diamond_pickaxe", "amount": 1 },
+      { "type": "token", "amount": 5 }
+    ]
   }
 ]

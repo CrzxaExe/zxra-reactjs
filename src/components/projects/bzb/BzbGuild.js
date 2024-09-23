@@ -20,10 +20,14 @@ const BzbGuild = ({ full }) => {
       </b>
 
       <p className="text-xs lg:text-sm px-3 py-1 pb-3 w-full whitespace-pre-wrap text-justify">
+        Perserikatan atau bahasa Inggrisnya Guild adalah sebuah fitur untuk
+        membuat sebuah kelompok dalam satu dunia yang akan mempermudah kalian
+        dalam mencari kebutuhan dan keuntungan yang ada pada perserikatan. Ini
+        merupakan fitur jangka panjang yang akan terus di tingkatkan.
         {!full ? (
           <>
             {" "}
-            Selengkapnya ada{" "}
+            Selengkapnya tentang fitur perserikatan bisa di cek{" "}
             <Link className="text-tsec underline" to="ui">
               disini
             </Link>
