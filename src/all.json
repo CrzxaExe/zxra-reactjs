@@ -53,6 +53,7 @@
     {
       "name": "Zxra Rest",
       "ver": "1.0.2",
+      "img": "https://avatars.githubusercontent.com/u/78332709?s=400&u=4aa87c566a5fb68af00b3f830e39200dcfee5529&v=4",
       "act": true,
       "stats": {
         "lang": ["javascript", "json"],
@@ -62,54 +63,16 @@
       "des": "Connected to your Zxra API"
     },
     {
-      "name": "Khyro Discord Bot",
+      "name": "Khyro Bot",
       "ver": "2.8.0",
       "img": "https://raw.githubusercontent.com/CrzxaExe/CrzxaExe/main/asset/Logo_Khyro.png",
       "act": false,
       "stats": {
         "lang": ["javascript"],
-        "app": "Discord Bot"
+        "app": "Discord & Whatsapp Bot"
       },
-      "link": "khyro-dc",
-      "des": "Idk, just created\nThis is a first version of MKx Discord Bot"
-    },
-    {
-      "name": "Khyro Whatsapp Bot",
-      "ver": "1.8.4",
-      "img": "https://raw.githubusercontent.com/CrzxaExe/CrzxaExe/main/asset/Logo_Khyro.png",
-      "act": false,
-      "stats": {
-        "lang": ["javascript"],
-        "app": "Whatsapp Bot"
-      },
-      "link": "khyro-wa",
-      "des": "Nyoba doank aslinya, cuman lanjut part 2"
-    },
-    {
-      "name": "BZB Web",
-      "ver": "1",
-      "img": "https://raw.githubusercontent.com/CrzxaExe/Zxra-web/master/img/bzb.png",
-      "act": true,
-      "stats": {
-        "lang": ["html", "CSS", "JS"],
-        "app": "Static Website",
-        "content": []
-      },
-      "link": "bzb-web",
-      "hide": true,
-      "des": "Website sederhana dari Better Zxra Bedrock yang sekarang sudah berpindah ke sini. Di dalam project website tersebut sudah menggunakan Tailwind untuk styling pagenya, namun hanya menggunakan CDN saja."
-    },
-    {
-      "name": "Crzx Portofolio",
-      "ver": "1",
-      "img": "https://raw.githubusercontent.com/CrzxaExe/CrzxaExe/main/asset/Logo%20(1).png",
-      "act": false,
-      "stats": {
-        "lang": ["html", "CSS", "JS"],
-        "app": "Static Website"
-      },
-      "link": "cz-portofolio",
-      "des": "Sebuah website portofolio dari CrzxaExe\nSederhana saja yaitu dengan menggunakan HTML, CSS & JavaScript pada umumnya"
+      "link": "khyro-bot",
+      "des": "Bot versi awal sebelum lahirnya MKx"
     },
     {
       "name": "Cz DB",
@@ -120,7 +83,6 @@
         "app": "Crud"
       },
       "link": "cz-db",
-      "hide": true,
       "des": "Database buatan CrzxaExe"
     },
     {
@@ -131,6 +93,7 @@
         "lang": ["javascript"],
         "app": "Full Stack App"
       },
+      "hide": true,
       "link": "Chatlify",
       "des": "Website chatting"
     },
@@ -147,14 +110,14 @@
       "des": "Module for your minecraft addon, to use Zxra Function"
     },
     {
-      "name": "Xdzr",
+      "name": "XDzr",
       "ver": "1.0.0",
-      "act": false,
+      "act": true,
       "stats": {
-        "lang": ["Dart"],
-        "app": "Flutter Ap"
+        "lang": ["JavaScript"],
+        "app": "React Native"
       },
-      "link": "Xdzr",
+      "link": "XDzr",
       "des": "Idk, just created"
     },
     {
@@ -188,6 +151,11 @@
       "name": "Fbdl(Video)",
       "link": "fbdl",
       "img": "bx bx-download"
+    },
+    {
+      "name": "Gemini",
+      "link": "gemini",
+      "img": "bx bx-bot"
     }
   ]
 }

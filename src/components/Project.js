@@ -6,6 +6,8 @@ import Footer from "./Footer";
 function Project() {
   const [data, setData] = useState([]);
 
+  document.title = "Zxra Projects";
+
   useEffect(() => {
     setData(jsonData.project);
   }, []);
@@ -29,6 +31,7 @@ function Project() {
           .sort((a, b) => a.name.localeCompare(b.name))
           .map((e, i) => (
             <ProjectList
+              key={i}
               name={e.name}
               link={e.link}
               lang={e.stats.lang}
@@ -48,7 +51,6 @@ function Project() {
 }
 
 const ProjectList = ({ name, lang, app, ver, act, des, img, link, hide }) => {
-  console.log(name, hide);
   return hide !== true ? (
     <Link
       to={link ? link : "#"}
@@ -96,7 +98,7 @@ const ProjectList = ({ name, lang, app, ver, act, des, img, link, hide }) => {
           ></i>{" "}
           {lang.map((r) => r.charAt(0).toUpperCase() + r.slice(1)).join(", ")}
         </div>
-        <div className="hidden lg:inline-flex items-center rounded bg-nav px-1">
+        <div className="hidden lg:block items-center rounded bg-nav px-1">
           <i
             className="bx bx-mobile-landscape mr-1 text-sm"
             style={{ color: "#ffffff" }}

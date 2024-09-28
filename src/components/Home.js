@@ -10,6 +10,8 @@ import InterestsIcon from "@mui/icons-material/Interests";
 import SourceIcon from "@mui/icons-material/Source";
 
 function Home() {
+  document.title = "Zxra Create";
+
   return (
     <div className="mt-[2.25rem] lg:mt-[1.6rem] -z-1">
       <header className="w-full pb-2 pt-4 lg:pt-7 flex lg:flex-col items-end lg:items-start mt-[0.5rem]">
@@ -21,7 +23,7 @@ function Home() {
         </div>
       </header>
 
-      <section id="home" className="w-full py-2 flex flex-wrap -mt-7">
+      <section id="home" className="w-full py-2 flex flex-wrap -mt-6">
         <div className="w-full lg:w-2/3 self-center text-left mt-1">
           <h1 className="text-xl font-medium mt-6">
             Code..
@@ -33,7 +35,7 @@ function Home() {
             Eazier Your Life With Us
           </h2>
           <div className="w-full bg-tprime h-1 rounded"></div>
-          <p className=" py-4 px-2 text-xs text-slate cz-line mt-3 text-left mb-4">
+          <p className=" py-4 px-3 text-xs text-slate cz-line mt-3 text-left mb-4">
             Berikan inovasi kalian bersama kami di web ini
             <br />
             Buat inovasimu menjadi nyata
@@ -54,7 +56,7 @@ function Home() {
             </Link>
             <Link
               to="about"
-              className="bg-tsec py-1 px-5 rounded text-prime border-2 border-tsec hover:bg-prime hover:text-tsec transition-all duration-300 ease-in-out"
+              className="bg-tsec invisible lg:visible py-1 px-5 rounded text-prime border-2 border-tsec hover:bg-prime hover:text-tsec transition-all duration-300 ease-in-out"
             >
               <b className="font-['Valorant']">I</b>
             </Link>
@@ -110,7 +112,7 @@ function Home() {
               diakses dan mudah untuk dipahami(mungkin)
             </p>
           </div>
-          <div className="self-center w-full lg:max-w-[49.3%] lg:mr-[0.7%] px-2 py-3">
+          <div className="self-start w-full lg:max-w-[49.3%] lg:mr-[0.7%] px-2 py-3">
             <BackupTableIcon
               className="bg-nav rounded p-1 text-tsec"
               sx={{ fontSize: 40 }}
@@ -127,7 +129,7 @@ function Home() {
               </a>
             </p>
           </div>
-          <div className="self-end w-full lg:w-[49.3%] lg:ml-[0.7%] pl-1 mt-2 lg:mt-0 px-2 py-3">
+          <div className="self-start w-full lg:w-[49.3%] lg:ml-[0.7%] pl-1 mt-2 lg:mt-0 px-2 py-3">
             <Badge badgeContent={3} color="primary" className="lg:mt-1">
               <InterestsIcon
                 className="bg-nav rounded p-1 text-tsec"
@@ -135,10 +137,10 @@ function Home() {
               />
             </Badge>
             <b className="px-2 lg:text-lg">Sosial Media</b>
-            <p className="text-sm px-2 ml-1 border-0 border-l text-justify">
+            <p className="text-sm px-2 pt-1 ml-4 border-0 border-l text-justify">
               Anda berminat menghubungi kami? Tenang saja kami memiliki beberapa
               sosial media seperti:
-              <div className="flex ml-5">
+              <div className="flex ml-1">
                 <a
                   href="https://www.facebook.com/crzx.zxra"
                   className="px-[4px] rounded border-[1px] border-tprime text-sm flex items-center justify-center mr-1"

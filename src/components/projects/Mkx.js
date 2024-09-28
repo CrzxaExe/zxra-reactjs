@@ -1,5 +1,5 @@
 import React from "react";
-import TextLine from "../TextLine";
+import TextLine from "../view/TextLine";
 import jsonData from "../../all.json";
 
 function Mkx() {
@@ -11,6 +11,8 @@ function Mkx() {
     ver,
     stats: { app, lang },
   } = jsonData.project.find((e) => e.name === "MKx");
+
+  document.title = name;
 
   return (
     <div className="mt-[2.25rem] lg:mt-[1.6rem] -z-1 lg:h-[93vh] -mb-[6rem]">
@@ -80,7 +82,7 @@ function Mkx() {
               ></i>{" "}
               Versi {ver}
             </span>
-            <span className="block bg-nav rounded px-2 py-1 whitespace-pre-wrap">
+            <span className="block bg-nav rounded px-2 py-1 whitespace-pre-wrap mt-2">
               <i
                 className="bx bx-note mr-1 text-sm"
                 style={{ color: "#ffffff" }}

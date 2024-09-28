@@ -1,5 +1,5 @@
 import React from "react";
-import TextLine from "../TextLine";
+import TextLine from "../view/TextLine";
 import jsonData from "../../all.json";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { coy } from "react-syntax-highlighter/dist/esm/styles/prism";
@@ -11,6 +11,8 @@ function ZxraRest() {
     ver,
     stats: { app, lang },
   } = jsonData.project.find((e) => e.name === "Zxra Rest");
+
+  document.title = "Zxra Rest";
 
   const endpoint1 = [
     {
@@ -120,7 +122,7 @@ function ZxraRest() {
               ></i>{" "}
               Versi {ver}
             </span>
-            <span className="block bg-nav rounded px-2 py-1 whitespace-pre-wrap">
+            <span className="block bg-nav rounded px-2 py-1 whitespace-pre-wrap mt-2">
               <i
                 className="bx bx-note mr-1 text-sm"
                 style={{ color: "#ffffff" }}

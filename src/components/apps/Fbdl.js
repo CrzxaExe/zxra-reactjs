@@ -4,6 +4,8 @@ import "react-toastify/dist/ReactToastify.css";
 import axios from "axios";
 
 function Fbdl() {
+  document.title = "Fbdl";
+
   const [videoUrl, setVideoUrl] = useState();
   const [videoName, setVideoName] = useState("");
 
@@ -26,10 +28,6 @@ function Fbdl() {
       });
       let result = gets.data?.result;
 
-      //console.table(result)
-
-      //if(!result.HD) return;
-
       setVideoUrl(result?.HD);
       setVideoName(result?.Title);
     } catch (err) {
@@ -41,7 +39,6 @@ function Fbdl() {
 
   return (
     <div className="mt-[2.25rem] lg:mt-[1.6rem] -z-1">
-      <title>Facebook Downloader</title>
       <header className="w-full pb-2 pt-4 lg:pt-7 flex lg:flex-col items-end lg:items-start mt-[0.5rem] mb-5">
         <div className="font-bold text-xl lg:text-2xl mr-3 text-tsec">
           FB Downloader
@@ -74,7 +71,7 @@ function Fbdl() {
           ""
         )}
         <form action="" className="bg-nav px-4 py-3">
-          <label className="block text-sm lg:text-lg text-tsec font-['Valorant'] text-xl lg:text-2xl mt-2 font-bold">
+          <label className="block text-tsec font-['Valorant'] text-xl lg:text-2xl mt-2 font-bold">
             Link
           </label>
           <div className="inline-flex flex-wrap w-full bg-prime rounded-[8px] justify-left items-start">

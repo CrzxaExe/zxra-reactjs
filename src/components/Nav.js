@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import NavLine from "./NavLine";
+import NavLine from "./view/NavLine";
 import lg from "../img/logo.png";
 
 const Nav = ({ nav, setNav }) => {
@@ -47,7 +47,7 @@ const Nav = ({ nav, setNav }) => {
 
       <div className="flex flex-col mt-9 lg:mt-2 text-sm w-[90%] lg:w-full font-['Valorant'] -tracking-[0.06rem]">
         <Link
-          className="flex items-center text-[1.06rem] truncate -ml-1 rounded lg:-ml-2 lg:hover:ml-0 px-2 py-[4px] bg-transparent hover:bg-prime transition-all ease-in-out duration-300"
+          className="flex items-center text-[1.06rem] truncate -ml-1 rounded lg:-ml-2 lg:hover:ml-0 px-2 py-[4px] bg-transparent hover:bg-prime transition-all ease-in-out duration-300 aspect-square md:aspect-auto"
           to="/"
         >
           <i
@@ -57,7 +57,7 @@ const Nav = ({ nav, setNav }) => {
           <div className="tooltip ml-1">Beranda</div>
         </Link>
         <Link
-          className="flex items-center text-[1.06rem] truncate -ml-1 rounded lg:-ml-2 lg:hover:ml-0 px-2 py-[4px] bg-transparent hover:bg-prime transition-all ease-in-out duration-300"
+          className="flex items-center text-[1.06rem] truncate -ml-1 rounded lg:-ml-2 lg:hover:ml-0 px-2 py-[4px] bg-transparent hover:bg-prime transition-all ease-in-out duration-300 aspect-square md:aspect-auto"
           to="apps"
         >
           <i
@@ -67,7 +67,7 @@ const Nav = ({ nav, setNav }) => {
           <span className="tooltip ml-1">Apps</span>
         </Link>
         <Link
-          className="flex items-center text-[1.06rem] truncate -ml-1 rounded lg:-ml-2 lg:hover:ml-0 px-2 py-[4px] bg-transparent hover:bg-prime transition-all ease-in-out duration-300"
+          className="flex items-center text-[1.06rem] truncate -ml-1 rounded lg:-ml-2 lg:hover:ml-0 px-2 py-[4px] bg-transparent hover:bg-prime transition-all ease-in-out duration-300 aspect-square md:aspect-auto"
           to="gallery"
         >
           <i
@@ -77,7 +77,7 @@ const Nav = ({ nav, setNav }) => {
           <span className="tooltip ml-1">Gallery</span>
         </Link>
         <Link
-          className="flex items-center text-[1.06rem] truncate -ml-1 rounded lg:-ml-2 lg:hover:ml-0 px-2 py-[4px] bg-transparent hover:bg-prime transition-all ease-in-out duration-300"
+          className="flex items-center text-[1.06rem] truncate -ml-1 rounded lg:-ml-2 lg:hover:ml-0 px-2 py-[4px] bg-transparent hover:bg-prime transition-all ease-in-out duration-300 aspect-square md:aspect-auto"
           to="project"
         >
           <i
@@ -87,7 +87,7 @@ const Nav = ({ nav, setNav }) => {
           <div className="tooltip ml-1">Project</div>
         </Link>
         <Link
-          className="flex items-center text-[1.06rem] truncate -ml-1 rounded lg:-ml-2 lg:hover:ml-0 px-2 py-[4px] bg-transparent hover:bg-prime transition-all ease-in-out duration-300"
+          className="flex items-center text-[1.06rem] truncate -ml-1 rounded lg:-ml-2 lg:hover:ml-0 px-2 py-[4px] bg-transparent hover:bg-prime transition-all ease-in-out duration-300 aspect-square md:aspect-auto"
           to="about"
         >
           <i

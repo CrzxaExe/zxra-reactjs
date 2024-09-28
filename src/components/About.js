@@ -10,6 +10,8 @@ function About() {
   import Zxra from '@zxra/cz-dx';
   `;
 
+  document.title = "About Zxra";
+
   return (
     <div className="mt-[2.25rem] lg:mt-[1.6rem] -z-1">
       <title>About Zxra</title>

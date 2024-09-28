@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import TextLine from "../../TextLine";
+import TextLine from "../../view/TextLine";
 import PrKonten from "../PrKonten";
 import BzbGuild from "./BzbGuild";
 import BzbMechanics from "./BzbMechanics";
@@ -13,7 +13,8 @@ import BzbWorld from "./BzbWorld";
 import jsonData from "../../../all.json";
 
 function Bzb() {
-  // const [ktn, setKtn] = useState(false);
+  document.title = "Bzb";
+
   const {
     img,
     act,
@@ -43,7 +44,7 @@ function Bzb() {
           <span className="lg:hidden">BZB</span>
           <span className="hidden lg:block">Better Zxra Bedrock</span>
         </div>
-        <div className="before:content-['>'] lg:before:content-[''] before:mr-2 lg:before:mr-0 before:text-xl -mt-2 text-tter">
+        <div className="before:content-['|'] lg:before:content-[''] before:mr-2 lg:before:mr-0 before:text-xl -mt-2 text-tter">
           Lets enchant your journey
         </div>
       </header>
@@ -106,7 +107,7 @@ function Bzb() {
               ></i>{" "}
               Versi {ver}
             </span>
-            <span className="block bg-nav rounded px-2 py-1 whitespace-pre-wrap">
+            <span className="block bg-nav rounded px-2 py-1 whitespace-pre-wrap mt-2">
               <i
                 className="bx bx-note mr-1 text-sm"
                 style={{ color: "#ffffff" }}

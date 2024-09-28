@@ -4,8 +4,8 @@ import About from "./components/About";
 import Apps from "./components/Apps";
 import Gallery from "./components/Gallery";
 import Nav from "./components/Nav";
-import Loading from "./components/Loading";
-import TopBar from "./components/TopBar";
+import Loading from "./components/view/Loading";
+import TopBar from "./components/view/TopBar";
 
 // Project Components
 // BZB
@@ -18,26 +18,23 @@ import BzbQuest from "./components/projects/bzb/BzbQuest";
 import BzbWeapon from "./components/projects/bzb/BzbWeapon";
 import BzbWorld from "./components/projects/bzb/BzbWorld";
 
-import BzbWeb from "./components/projects/BzbWeb";
-import Chatlify from "./components/projects/Chatlify";
-import CzDb from "./components/projects/CzDb";
-import CzPortofolio from "./components/projects/CzPortofolio";
-import KhyroDc from "./components/projects/KhyroDc";
-import KhyroWa from "./components/projects/KhyroWa";
 import Mkx from "./components/projects/Mkx";
-import Xdzr from "./components/projects/Xdzr";
-import ZxraDustry from "./components/projects/ZxraDustry";
-import ZxraLib from "./components/projects/ZxraLib";
 import ZxraRest from "./components/projects/ZxraRest";
+
+import ProjectPage from "./components/ProjectPage";
 
 // App Component
 import Fbdl from "./components/apps/Fbdl";
+import Gemini from "./components/apps/Gemini";
 
 const Home = lazy(() => import("./components/Home"));
 const Project = lazy(() => import("./components/Project"));
 
 function App() {
   const [nav, setNav] = useState(false);
+
+  document.title = "Zxra Create";
+
   return (
     <Suspense fallback={<Loading />}>
       <BrowserRouter>
@@ -46,7 +43,7 @@ function App() {
 
         <div
           id="navdark"
-          className="w-full h-[100vh] bg-prime/[0] cz-transition fixed lg:hidden top-0 left-0 z-[0]"
+          className="w-full h-[100vh] bg-prime/[0] cz-transition fixed lg:hidden top-0 left-0 z-[5]"
         ></div>
         <div className="container w-full pr-[18px] px-6 pl-[13%] lg:pl-[16.5%] overflow-x-hidden overflow-y-scroll h-screen pb-[8%] scroll-smooth">
           <Routes>
@@ -58,21 +55,39 @@ function App() {
             <Route exact path="/" element={<Home />} />
 
             <Route exact path="apps/fbdl" element={<Fbdl />} />
+            <Route exact path="apps/gemini" element={<Gemini />} />
 
-            <Route exact path="project/bzb-web" element={<BzbWeb />} />
-            <Route exact path="project/Chatlify" element={<Chatlify />} />
-            <Route exact path="project/cz-db" element={<CzDb />} />
             <Route
               exact
-              path="project/cz-portofolio"
-              element={<CzPortofolio />}
+              path="project/Chatlify"
+              element={<ProjectPage page="Chatlify" />}
             />
-            <Route exact path="project/khyro-dc" element={<KhyroDc />} />
-            <Route exact path="project/khyro-wa" element={<KhyroWa />} />
+            <Route
+              exact
+              path="project/cz-db"
+              element={<ProjectPage page="Cz DB" />}
+            />
+            <Route
+              exact
+              path="project/khyro-bot"
+              element={<ProjectPage page="Khyro Bot" />}
+            />
             <Route exact path="project/mkx" element={<Mkx />} />
-            <Route exact path="project/xdzr" element={<Xdzr />} />
-            <Route exact path="project/ZxraDustry" element={<ZxraDustry />} />
-            <Route exact path="project/ZxraLib" element={<ZxraLib />} />
+            <Route
+              exact
+              path="project/XDzr"
+              element={<ProjectPage page="XDzr" />}
+            />
+            <Route
+              exact
+              path="project/ZxraDustry"
+              element={<ProjectPage page="ZxraDustry" />}
+            />
+            <Route
+              exact
+              path="project/ZxraLib"
+              element={<ProjectPage page="ZxraLib" />}
+            />
             <Route exact path="project/ZxraRest" element={<ZxraRest />} />
 
             <Route exact path="project/bzb/" element={<Bzb />} />

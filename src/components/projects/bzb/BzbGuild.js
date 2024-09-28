@@ -28,7 +28,7 @@ const BzbGuild = ({ full }) => {
           <>
             {" "}
             Selengkapnya tentang fitur perserikatan bisa di cek{" "}
-            <Link className="text-tsec underline" to="ui">
+            <Link className="text-tsec underline" to="guild">
               disini
             </Link>
             .{" "}
